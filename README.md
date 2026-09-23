@@ -1,9 +1,5 @@
-Warhammer 40,000: 11th Edition
+Warhammer 40,000: 11th Edition Combat Patrol
 ==============================
-
-[![Open bugs](https://img.shields.io/github/issues/BSData/TemplateDataRepo/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/wh40k-11e/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![Contributors](https://img.shields.io/github/contributors/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/wh40k-11e/graphs/contributors)
-[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/wh40k-11e/pulse/monthly)
 
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
 
@@ -23,4 +19,4 @@ Great, thank you! Please [Report a bug][bug report] - you can also suggest enhan
 * [BSData organization homepage][BSData.net]
 
 [BSData.net]: https://www.bsdata.net/
-[bug report]: https://github.com/BSData/wh40k-11e/issues/new/choose
+[bug report]: https://github.com/TBarker746/wh40k-11e-combat-patrol/issues/new/choose

@@ -1,0 +1,1520 @@
+{
+  "catalogue": {
+    "name": "Aeldari: Kygharil's Protectors",
+    "id": "21cc-9f35-b505-d905",
+    "authorContact": "\n",
+    "authorName": "TBarker746 (adapted from work by Dunamis55)",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "e46c-e9e7-d2bc-606b",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 2,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "categoryEntries": [
+      {"name": "Dire Avengers", "id": "5032-ad18-c8c7-295f", "hidden": false},
+      {"name": "Aspect Warriors", "id": "4d82-2943-8868-2782", "hidden": false},
+      {"name": "Warp Spiders", "id": "432f-4202-c91c-9f06", "hidden": false},
+      {"name": "Wraithblades", "id": "475b-bb84-f2c7-111d", "hidden": false},
+      {"name": "Wraith Construct", "id": "c250-f6c5-ffc8-bcd5", "hidden": false},
+      {"name": "Spiritseer", "id": "7ffc-5ee2-121a-2659", "hidden": false},
+      {"name": "Kygharil's Protectors", "id": "4b6d-fc52-5f00-71ec", "hidden": false}
+    ],
+    "entryLinks": [
+      {"name": "Dire Avengers", "id": "a5e0-9c61-f07d-467b", "hidden": false, "import": true, "targetId": "e6c2-f3b2-6d3e-c3d3", "type": "selectionEntry"},
+      {"name": "Spiritseer Kygharil", "id": "2a7d-902-33d3-f639", "hidden": false, "import": true, "targetId": "e53b-7d09-eb7c-c6c7", "type": "selectionEntry"},
+      {"name": "Warp Spiders", "id": "e43e-9113-736d-cdf6", "hidden": false, "import": true, "targetId": "57ec-47a8-a59a-6a46", "type": "selectionEntry"},
+      {"name": "Wraithblades", "id": "8cb-f672-a815-49ef", "hidden": false, "import": true, "targetId": "bb4f-4359-cc16-e6d5", "type": "selectionEntry"},
+      {"name": "Detachment", "id": "73aa-e2f4-3244-456f", "hidden": false, "import": true, "targetId": "68f1-24f4-a4c6-303f", "type": "selectionEntry"},
+      {
+        "name": "Battle Focus - Agile Manoeuvres",
+        "id": "517a-dad5-0e75-8a13",
+        "hidden": false,
+        "import": true,
+        "targetId": "b9d2-bfd4-9cff-b871",
+        "type": "selectionEntry"
+      },
+      {"name": "Dire Avengers", "id": "17d1-bdde-3b79-bac5", "hidden": false, "import": true, "targetId": "b31c-9c6b-d78d-04a9", "type": "selectionEntry"}
+    ],
+    "rules": [
+      {
+        "name": "Battle Focus",
+        "id": "c324-e193-e23c-7d2e",
+        "description": "If your Army Faction is **^^ASURYANI^^**, at the start of the battle round, you receive 2 Battle Focus tokens.\n\nEach time one of the triggers shown in the Agile Manoeuvres section of your codex occurs, you can spend one Battle Focus token to enable the relevant eligible unit to perform that Agile Manoeuvre. A unit is eligible to perform an Agile Manoeuvre if it has this ability and has not already performed an Agile Manoeuvre in the same phase. Unless otherwise stated, you cannot trigger the same Agile Manoeuvre more than once per phase. At the end of the battle round, all unspent Battle Focus tokens are lost.",
+        "hidden": false
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Aspect Shrine Token (Once per battle per unit)",
+        "id": "8c64-1c06-0cdc-ed8d",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "When this unit makes **hit rolls** or **wound rolls**, you can use this ability. If you do, change one of those rolls to an unmodified 6.",
+            "typeId": "9b8f-694b-e5e-b573"
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Dire Avengers",
+        "id": "e6c2-f3b2-6d3e-c3d3",
+        "collective": false,
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Aeldari", "id": "d9f4-d161-01c4-fffd", "hidden": false, "primary": false, "targetId": "e035-51fc-813a-1313"},
+          {"name": "Aspect Warriors", "id": "487d-f997-5231-7263", "hidden": false, "primary": false, "targetId": "4d82-2943-8868-2782"},
+          {"name": "Kygharil's Protectors", "id": "6f7e-5410-dd71-bbf6", "hidden": false, "primary": false, "targetId": "4b6d-fc52-5f00-71ec"},
+          {"name": "Faction: Asuryani", "id": "01aa-b7ce-5567-0e60", "hidden": false, "primary": false, "targetId": "4378-1827-4988-be4e"},
+          {"name": "Unit", "id": "b744-acf9-7c7b-c027", "hidden": false, "primary": true, "targetId": "1160-70ae-a862-b1a8"},
+          {"name": "Infantry", "id": "046f-67ef-59e4-9c98", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"}
+        ],
+        "constraints": [
+          {"id": "3734-a76b-08f4-7518-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+          {"id": "3734-a76b-08f4-7518-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "3b65-5374-388e-9d9e",
+            "childId": "1556-9b56-fba6-4370",
+            "childName": "Leader",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "44fa-b0bb-a87d-441a",
+            "childId": "7dcd-7f61-69a7-0294",
+            "childName": "Support",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 70},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Battle Focus", "id": "cd1a-6aa1-e3b5-43e7", "hidden": false, "targetId": "c324-e193-e23c-7d2e", "type": "rule"},
+          {"name": "Stealth", "id": "45a4-ea54-83d1-82b4", "hidden": false, "targetId": "bec5-4288-34a6-ccfa", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Bladestorm",
+            "id": "735b-f532-a22f-da46",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "This unit's ranged attacks that target a unit within half range have have **[SUSTAINED HITS 1]**.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "4 Dire Avengers",
+            "id": "320d-ef74-2bee-d40c",
+            "hidden": false,
+            "sortIndex": 3,
+            "constraints": [
+              {"id": "e742-4259-366-9600", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+              {"id": "3ae6-754f-8fc4-929d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Dire Avenger",
+                "id": "b542-fa0c-e63b-53dc",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "ce33-1669-16c4-1952", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+                  {"id": "4315-d98c-e2fb-d96c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Avenger Shuriken Catapult",
+                    "id": "6113-633b-5208-372d",
+                    "collective": true,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e007-ad30-b419-57b4",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "5381-8172-b8db-b9c2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "346-df61-8bdf-9337", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Dire Avenger",
+                    "id": "289d-76b1-de24-bb6e",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "7\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "W", "$text": "1", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Close Combat Weapon",
+                    "id": "f681-31b4-d48d-247f",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "4f00-f5f4-522a-1545", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "036b-ab15-ef5b-36fb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Weapon Strike",
+                        "id": "8ef4-3dba-b8d7-514a",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "S", "$text": "3", "typeId": "ab33-d393-96ce-ccba"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dire Avenger Exarch",
+            "id": "3271-e719-3e7d-cf8f",
+            "hidden": false,
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "name": "Dire Avenger Exarch",
+                "id": "3bfb-bdff-19cf-570d",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "a38e-1165-4be0-bf74", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "951d-d527-4030-74d3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Power Glaive",
+                    "id": "dc51-a2a1-c191-a33f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "090c-5411-6c6d-eaf9",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "4d25-6709-dea7-9446", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "41c4-709b-bba8-0b89", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Shimmershield",
+                    "id": "19dc-28ad-f1d6-9971",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "3143-f757-21ec-4a92",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "a7aa-44d7-9b0c-7338", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "9ce5-b935-6aa5-897d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Dire Avenger Exarch",
+                    "id": "74b4-71be-6ae6-125d",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "7\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spiritseer Kygharil",
+        "id": "e53b-7d09-eb7c-c6c7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Spiritseer", "id": "9645-d5ae-8fdf-b01b", "hidden": false, "primary": false, "targetId": "7ffc-5ee2-121a-2659"},
+          {"name": "Character", "id": "6235-872d-5d9d-5d29", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Infantry", "id": "6103-ce09-3fcb-555b", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Psyker", "id": "3965-f938-6f23-d65", "hidden": false, "primary": false, "targetId": "13bf-2bee-3ae0-b414"},
+          {"name": "Aeldari", "id": "c1f1-3798-640a-e217", "hidden": false, "primary": false, "targetId": "e035-51fc-813a-1313"},
+          {"name": "Kygharil's Protectors", "id": "8a41-003b-04e2-bd32", "hidden": false, "primary": false, "targetId": "4b6d-fc52-5f00-71ec"},
+          {"name": "Warlord", "id": "46f8-a904-e6ed-3227", "hidden": false, "primary": true, "targetId": "5c0e-4c31-d51b-e470"},
+          {"name": "Faction: Asuryani", "id": "ca64-2847-4f62-220c", "hidden": false, "primary": false, "targetId": "4378-1827-4988-be4e"}
+        ],
+        "constraints": [
+          {"id": "f707-3694-a092-e00d", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+          {"id": "27e5-962e-a2fd-4f89", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 50},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Enhancements",
+            "id": "8941-2616-c7ca-c6d1",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "4e2c-4ba5-749f-745a",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Battle Focus", "id": "5d75-975-cf07-a89e", "hidden": false, "targetId": "c324-e193-e23c-7d2e", "type": "rule"},
+          {"name": "Stealth", "id": "4530-3483-4214-5971", "hidden": false, "targetId": "bec5-4288-34a6-ccfa", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Spiritseer Kygharil",
+            "id": "976c-aa8a-1efc-10b4",
+            "hidden": false,
+            "typeId": "c547-1836-d8a-ff4f",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "M", "$text": "7\"", "typeId": "e703-ecb6-5ce7-aec1"},
+              {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+              {"name": "Sv", "$text": "6+", "typeId": "450-a17e-9d5e-29da"},
+              {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+              {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+              {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+              {"name": "InSv", "$text": "4+", "typeId": "55a7-5b54-c60d-11dc"}
+            ]
+          },
+          {
+            "name": "Spirit Mark (Psychic) (Once per turn per unit)",
+            "id": "255b-3bb3-dbc6-f9bb",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When this unit starts or ends a move, you can use this ability. If you do, select one friendly **WRAITH CONSTRUCT** unit (excluding **TITANIC** units) within 6\" of this model and one enemy unit **visible** to this model. That friendly unit's attacks that target that enemy unit have the **[SUSTAINED HITS 1]** ability until the start of your next Movement phase.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Tears of Isha (Psychic)",
+            "id": "f781-d34a-675f-28bf",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "In your Command phase, select one friendly **WRAITH CONSTRUCT** unit within 6\" of this model that has not been selected for this ability this turn.\n- If that unit has a **destroyed** model, return one **destroyed** model to that unit.\n- Or: if that unit does not have a **destroyed** model, one model in that unit **heals** D3 wounds.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Spiritseer",
+            "id": "10d8-76d2-6689-5b6b",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "While this model is within 3\" of a friendly **WRAITH CONSTRUCT** unit, this model has **Lone Operative**.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "1171-815a-1a8c-299c",
+            "hidden": false,
+            "sortIndex": 4,
+            "entryLinks": [{"name": "Shuriken Pistol", "id": "4796-e6f6-4070-94c4", "hidden": false, "import": true, "targetId": "f550-9922-c96a-805f", "type": "selectionEntry"}],
+            "selectionEntries": [
+              {
+                "name": "Witch Staff",
+                "id": "f5e3-9ba5-5d5b-cc29",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [
+                  {"name": "Psychic Weapon", "id": "023b-3045-2447-5321", "hidden": false, "primary": false, "targetId": "4546-4a0c-b3be-e84c"},
+                  {"name": "Melee Weapon", "id": "d014-1c12-dfb8-e7f7", "hidden": false, "primary": false, "targetId": "ccdd-3987-11ed-90cd"},
+                  {"name": "Damage Dx Weapon", "id": "ea3f-db31-e95a-5ee0", "hidden": false, "primary": false, "targetId": "4986-bf86-beb4-13ac"}
+                ],
+                "constraints": [
+                  {"id": "c9b7-4262-92b-95df", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "aa50-84bf-2990-eee5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [
+                  {"name": "Anti", "id": "4991-ae51-eeac-c8a2", "hidden": false, "targetId": "4111-82e3-9444-e942", "type": "rule"},
+                  {"name": "Psychic", "id": "af4b-6234-54ff-12e0", "hidden": false, "targetId": "e9c4-2bb8-12ee-cd1b", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Witch Staff",
+                    "id": "ea0d-c143-4e2d-64b3",
+                    "hidden": false,
+                    "typeId": "8a40-4aaa-c780-9046",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                      {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                      {"name": "WS", "$text": "2+", "typeId": "95d1-95f-45b4-11d6"},
+                      {"name": "S", "$text": "3", "typeId": "ab33-d393-96ce-ccba"},
+                      {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                      {"name": "D", "$text": "D3", "typeId": "3254-9fe6-d824-513e"},
+                      {"name": "Keywords", "$text": "ANTI-INFANTRY 2+, PSYCHIC", "typeId": "893f-9000-ccf7-648e"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wraithblades",
+        "id": "bb4f-4359-cc16-e6d5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Wraithblades", "id": "f432-1fe7-8dd1-1e5d", "hidden": false, "primary": false, "targetId": "475b-bb84-f2c7-111d"},
+          {"name": "Infantry", "id": "8748-e8f0-8265-d149", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Wraith Construct", "id": "f8ff-c11f-f05c-f3e8", "hidden": false, "primary": false, "targetId": "c250-f6c5-ffc8-bcd5"},
+          {"name": "Faction: Asuryani", "id": "8c56-b9d5-2ab2-17dc", "hidden": false, "primary": false, "targetId": "4378-1827-4988-be4e"},
+          {"name": "Aeldari", "id": "8104-4851-22d5-ffa0", "hidden": false, "primary": false, "targetId": "e035-51fc-813a-1313"},
+          {"name": "Kygharil's Protectors", "id": "b36e-1cf2-f8d1-7385", "hidden": false, "primary": false, "targetId": "4b6d-fc52-5f00-71ec"},
+          {"name": "Unit", "id": "1ccf-0d98-bfb6-128a", "hidden": false, "primary": true, "targetId": "1160-70ae-a862-b1a8"}
+        ],
+        "constraints": [
+          {"id": "e5ea-fe40-fae6-b629", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "d611-769c-b041-e4f2",
+            "childId": "1556-9b56-fba6-4370",
+            "childName": "Leader",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "7918-305a-aa6b-56ff",
+            "childId": "7dcd-7f61-69a7-0294",
+            "childName": "Support",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {"id": "0f00-084b-91c0-5a15", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 140},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0}
+        ],
+        "profiles": [
+          {
+            "name": "Malevolent Souls",
+            "id": "42be-9bc0-e8fa-756a",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When a model in this unit is **destroyed**, if this unit has not been **selected to fight** this phase, roll one D6:\n- On a 3+, do not remove that model from the battlefield. When this unit has fought, or at the end of the phase (whichever comes first), that model is removed from the battlefield.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Psychic Guidance",
+            "id": "a5fe-7ae8-ab25-a372",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "While this unit is within 12\" of one or more friendly **AELDARI PSYKER** models:\n- This unit has 6+ **Ld**. \n- This unit's attacks have +1 to **hit rolls**",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Wraithblade",
+            "id": "c696-ef67-b02b-eb47",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "constraints": [
+              {"id": "5553-b3e-a0dd-ad24", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5},
+              {"id": "9b2b-a0bd-cf8-17b4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 5}
+            ],
+            "profiles": [
+              {
+                "name": "Wraithblade",
+                "id": "3b78-5c82-dbbe-d6c3",
+                "hidden": false,
+                "typeId": "c547-1836-d8a-ff4f",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                  {"name": "T", "$text": "6", "typeId": "d29d-cf75-fc2d-34a4"},
+                  {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                  {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                  {"name": "LD", "$text": "8+", "typeId": "58d2-b879-49c7-43bc"},
+                  {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+                  {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Forceshield",
+                "id": "f1e6-b77b-b28a-f9f6",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "608c-7a26-dc1f-948f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d221-1082-1a03-c720", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "modifiers": [{"affects": "self.entries.recursive.profiles.Unit", "field": "55a7-5b54-c60d-11dc", "join": ", ", "scope": "unit", "type": "set", "value": "4+"}],
+                "profiles": [
+                  {
+                    "name": "Forceshield",
+                    "id": "2e7d-c58b-febe-4e0e",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This model has 4+ **InSv**.", "typeId": "9b8f-694b-e5e-b573"}]
+                  }
+                ]
+              },
+              {
+                "name": "Ghostaxe",
+                "id": "426b-b231-8a8b-56ab",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "12e9-972d-3fc6-eb14", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "fc4f-13fa-ed19-f41b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Ghostaxe",
+                    "id": "f598-e016-e2db-e725",
+                    "hidden": false,
+                    "typeId": "8a40-4aaa-c780-9046",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                      {"name": "A", "$text": "3", "typeId": "2337-daa1-6682-b110"},
+                      {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                      {"name": "S", "$text": "7", "typeId": "ab33-d393-96ce-ccba"},
+                      {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
+                      {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+                      {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Warp Spiders",
+        "id": "57ec-47a8-a59a-6a46",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "be6-72f4-e395-2f97", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Fly", "id": "c189-b692-c3e-8244", "hidden": false, "primary": false, "targetId": "c619-2086-bbcf-69c9"},
+          {"name": "Faction: Asuryani", "id": "4944-9a6b-92af-449", "hidden": false, "primary": false, "targetId": "4378-1827-4988-be4e"},
+          {"name": "Jump Pack", "id": "669a-8972-67fc-152e", "hidden": false, "primary": false, "targetId": "dda2-bb0a-215e-ad9c"},
+          {"name": "Aeldari", "id": "fd6c-5bb2-dcee-a050", "hidden": false, "primary": false, "targetId": "e035-51fc-813a-1313"},
+          {"name": "Aspect Warriors", "id": "8866-1352-815e-cfd5", "hidden": false, "primary": false, "targetId": "4d82-2943-8868-2782"},
+          {"name": "Warp Spiders", "id": "3dfb-a80a-163b-538a", "hidden": false, "primary": false, "targetId": "432f-4202-c91c-9f06"},
+          {"name": "Unit", "id": "c1c1-ee25-987d-874f", "hidden": false, "primary": true, "targetId": "1160-70ae-a862-b1a8"}
+        ],
+        "constraints": [
+          {"id": "03ff-3372-6407-f872", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+          {
+            "id": "14cf-24c3-5256-5de4",
+            "childId": "1556-9b56-fba6-4370",
+            "childName": "Leader",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "e714-eca6-6d44-cf3f",
+            "childId": "7dcd-7f61-69a7-0294",
+            "childName": "Support",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {"id": "b77c-3499-dea4-cb26", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 105},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Enhancements",
+            "id": "c5b9-8b98-0200-2dcf",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "4e2c-4ba5-749f-745a",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Battle Focus", "id": "28eb-9cf5-2dd6-6682", "hidden": false, "targetId": "c324-e193-e23c-7d2e", "type": "rule"},
+          {"name": "Aspect Shrine Token (Once per battle per unit)", "id": "d0dc-60c7-7e60-fe7b", "hidden": false, "targetId": "8c64-1c06-0cdc-ed8d", "type": "profile"},
+          {"name": "Stealth", "id": "5710-8511-d9bf-07de", "hidden": false, "targetId": "bec5-4288-34a6-ccfa", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Engulfing Flames (Once per battle per unit)",
+            "id": "b8cc-f83d-d3d7-22af",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When this unit is **selected to shoot**, you can use this ability. If you do, this unit's ranged attacks have **[ANTI-INFANTRY 3+]**.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "4 Warp Spiders",
+            "id": "4de3-a5c1-f61a-d3d3",
+            "hidden": false,
+            "sortIndex": 3,
+            "constraints": [
+              {"id": "4fce-46e7-2fe4-9c7", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+              {"id": "21d3-2e9e-323d-870c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Warp Spider",
+                "id": "88c0-fecd-682-e508",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "9614-69e4-2b28-deaf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+                  {"id": "1cde-1053-7ccd-1dd3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+                ],
+                "entryLinks": [{"name": "Weapon Strike", "id": "3597-b2d3-afda-7246", "hidden": false, "import": true, "targetId": "6f5b-87a7-49f0-9721", "type": "selectionEntry"}],
+                "profiles": [
+                  {
+                    "name": "Warp Spider",
+                    "id": "ed8-68a4-3726-6e35",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "12\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "W", "$text": "1", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Death Spinner",
+                    "id": "60e9-311d-901d-d5c9",
+                    "collective": true,
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "categoryLinks": [
+                      {"name": "Torrent Weapon", "id": "06bb-7e1a-9a4c-1696", "hidden": false, "primary": false, "targetId": "064a-0470-60eb-e3ef"},
+                      {"name": "Attacks Dx Weapon", "id": "8b01-5d8d-770a-a605", "hidden": false, "primary": false, "targetId": "e993-e086-6de1-12af"}
+                    ],
+                    "constraints": [
+                      {"id": "44ab-78e5-1cee-aac6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "d2f1-6d69-35ab-4ab2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [
+                      {"name": "Ignores Cover", "id": "2a4b-dc35-a839-ddd7", "hidden": false, "targetId": "4640-43e7-30b-215a", "type": "rule"},
+                      {"name": "Torrent", "id": "3239-64e8-f90c-e5ee", "hidden": false, "targetId": "5edf-d619-23e0-9b56", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Death Spinner",
+                        "id": "6030-711b-795c-18af",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "D6", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "-", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
+                          {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "IGNORES COVER, TORRENT", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Warp Spider Exarch",
+            "id": "a8bc-35b8-cf1b-a0f7",
+            "hidden": false,
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "name": "Warp Spider Exarch",
+                "id": "f846-9526-462e-c472",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "6be2-4c75-313f-043f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "16d2-e9be-cb96-4816", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Warp Spider Exarch",
+                    "id": "70c0-e9a4-98e2-402b",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "12\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "W", "$text": "1", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Death Weavers",
+                    "id": "b755-654b-42e9-5bd3",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "categoryLinks": [
+                      {"name": "Torrent Weapon", "id": "8ce4-b494-989f-3c3d", "hidden": false, "primary": false, "targetId": "064a-0470-60eb-e3ef"},
+                      {"name": "Attacks Dx Weapon", "id": "6d06-835c-eebe-2f4f", "hidden": false, "primary": false, "targetId": "e993-e086-6de1-12af"}
+                    ],
+                    "constraints": [
+                      {"id": "d486-b111-3c2d-4d51", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "61e6-c691-d9d2-459b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [
+                      {"name": "Ignores Cover", "id": "23c0-07ed-bcbc-5fee", "hidden": false, "targetId": "4640-43e7-30b-215a", "type": "rule"},
+                      {"name": "Twin-linked", "id": "7a25-d070-a9d7-c382", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"},
+                      {"name": "Torrent", "id": "e3a4-d82c-c60b-8c8a", "hidden": false, "targetId": "5edf-d619-23e0-9b56", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Death Weavers",
+                        "id": "bbc5-f690-5297-2cc2",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "6\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "D6", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "-", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
+                          {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "IGNORES COVER, TORRENT, TWIN-LINKED", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Powerblades",
+                    "id": "cdd6-a71e-45a3-acb4",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "ff98-911d-8090-0a00", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4bb4-15df-bf07-4cc4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [
+                      {"name": "Lethal Hits", "id": "d266-291b-1552-f8a0", "hidden": false, "targetId": "d1d1-611e-5191-1095", "type": "rule"},
+                      {"name": "Twin-linked", "id": "c012-e54e-2a26-9b58", "hidden": false, "targetId": "cf93-ad4d-2f08-a79d", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Powerblades",
+                        "id": "b65c-8103-f76f-77c9",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "5", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "S", "$text": "4", "typeId": "ab33-d393-96ce-ccba"},
+                          {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "LETHAL HITS, TWIN-LINKED", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Detachment",
+        "id": "68f1-24f4-a4c6-303f",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Configuration", "id": "dbcd-e446-9be2-ed7f", "hidden": false, "primary": true, "targetId": "4ac9-fd30-1e3d-b249"}],
+        "constraints": [
+          {
+            "id": "50fe-961d-0778-aa51",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "ba2b-260d-d28f-511b",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Kygharil's Protectors",
+            "id": "a557-8fe4-8cb6-b9bd",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Purge the Foe", "id": "0bb6-1190-f5cb-39c5", "hidden": false, "primary": false, "targetId": "6fe0-3dbe-f7e0-10bb"}],
+            "constraints": [
+              {"id": "1934-c091-4123-e75c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "46da-a4c6-1cef-90b2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0},
+              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 1}
+            ],
+            "rules": [
+              {
+                "name": "Graceful Warriors",
+                "id": "2bff-ac81-d386-0199",
+                "description": "Friendly **KYGHARIL'S PROTECTORS** units (excluding **KYGHARIL'S PROTECTORS WRAITHBLADES** units) have:\n- **Stealth**.\n- -3\" **detection range**.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Battle Focus - Agile Manoeuvres",
+        "id": "b9d2-bfd4-9cff-b871",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Configuration", "id": "e7d4-8abb-c234-e66c", "hidden": false, "primary": true, "targetId": "4ac9-fd30-1e3d-b249"}],
+        "constraints": [
+          {"id": "4cb1-3515-daa2-2822", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "02dd-f018-8a57-02fb", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Swift as the Wind",
+            "id": "45ae-a813-aadd-62c1",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "■ Trigger: When an eligible unit from your army is selected to make a Normal, Advance or Fall Back move. You can trigger this Agile Manoeuvre more than once per phase (provided a different unit performs it each time).\n■ Effect: Until the end of the phase, add 2\" to the Move characteristic of models in that unit.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Flitting Shadows",
+            "id": "7622-49c7-2b2f-a997",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "■ Trigger: When an eligible unit from your army is selected to make a Normal, Advance or Fall Back move, is set up on the battlefield, or declares a charge.\n■ Effect: Until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at that unit.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Star Engines",
+            "id": "8fcf-9607-9972-b25f",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "**TRIGGER**: When an eligible **VEHICLE** unit from your army is selected to make an Advance move.’\n**EFFECT**: Until the end of the turn, ranged weapons equipped by this unit have the **[ASSAULT]** ability.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Sudden Strike",
+            "id": "105a-267b-edaa-06cc",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "■ Trigger: When an eligible unit from your army is selected to fight.\n■ Effect: Until the end of the phase, each time a model in that unit makes a Pile-in or Consolidation move, it can move up to 6\" instead of up to 3\".",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Opportunity Seized",
+            "id": "9c13-ef5c-2d7a-0b65",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "■ Trigger: When an enemy unit ends a Fall Back move.\n■ Effect: One eligible unit from your army (excluding ^^Titanic^^ units) that started the phase within Engagement Range of that enemy unit can make a Normal move of up to D6+1\".",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          },
+          {
+            "name": "Fade Back",
+            "id": "c330-e18b-0bbd-ffa0",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "■ Trigger: In your opponent's Shooting phase, just after an enemy unit has shot.\n■ Effect: One eligible unit from you army (excluding ^^Titanic^^ units) that was hit by one or more of those attacks can make a Normal move of up to D6+1\".",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Glaive",
+        "id": "090c-5411-6c6d-eaf9",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Power Glaive",
+            "id": "48aa-7ce4-28b5-ecfa",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "3", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "5", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "-3", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Weapon Strike",
+        "id": "6f5b-87a7-49f0-9721",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6c1f-2880-e9d1-242e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "eb98-f1d3-6dcd-c46e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Weapon Strike",
+            "id": "6c68-093f-6516-7f51",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "3", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Avenger Shuriken Catapult",
+        "id": "e007-ad30-b419-57b4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Assault", "id": "5c32-718b-2439-e23d", "hidden": false, "targetId": "fc8a-8c24-bae9-cc1c", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Avenger Shuriken Catapult",
+            "id": "99c1-221c-c9ab-85ef",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "4", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "ASSAULT", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shimmershield",
+        "id": "3143-f757-21ec-4a92",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "modifiers": [{"affects": "profiles.Unit", "field": "55a7-5b54-c60d-11dc", "scope": "model", "type": "set", "value": "4+"}],
+        "profiles": [
+          {
+            "name": "Shimmershield",
+            "id": "f1fe-8446-b01d-3d82",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "This model has 4+ **InSv**.", "typeId": "9b8f-694b-e5e-b573"}]
+          }
+        ]
+      },
+      {
+        "name": "Shuriken Pistol",
+        "id": "f550-9922-c96a-805f",
+        "collective": true,
+        "comment": "1/2+/4/-1/1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Ranged Weapon", "id": "e57c-ae64-da16-9285", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"}],
+        "constraints": [
+          {"id": "4d3e-0277-d4db-0f7e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "4eb8-a719-f77c-7ad3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Assault", "id": "184c-5378-5708-0da4", "hidden": false, "targetId": "fc8a-8c24-bae9-cc1c", "type": "rule"},
+          {"name": "Close-quarters", "id": "510a-7068-703a-e714", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Shuriken Pistol",
+            "id": "298b-4390-ceea-9523",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "2+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "ASSAULT, CLOSE-QUARTERS", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dire Avengers",
+        "id": "b31c-9c6b-d78d-04a9",
+        "collective": false,
+        "defaultAmount": "1",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "e6cf-0338-4442-1bff", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Aeldari", "id": "b1ae-e90c-373b-5b81", "hidden": false, "primary": false, "targetId": "e035-51fc-813a-1313"},
+          {"name": "Aspect Warriors", "id": "f234-1f45-3647-cc7b", "hidden": false, "primary": false, "targetId": "4d82-2943-8868-2782"},
+          {"name": "Kygharil's Protectors", "id": "82d4-1fd0-952e-ce10", "hidden": false, "primary": false, "targetId": "4b6d-fc52-5f00-71ec"},
+          {"name": "Faction: Asuryani", "id": "0418-61c3-861b-da9c", "hidden": false, "primary": false, "targetId": "4378-1827-4988-be4e"},
+          {"name": "Unit", "id": "ab42-456e-80ee-6c28", "hidden": false, "primary": true, "targetId": "1160-70ae-a862-b1a8"}
+        ],
+        "constraints": [
+          {"id": "3bc7-b710-fdb0-aaba-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+          {"id": "3bc7-b710-fdb0-aaba-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "ff18-54c8-08f6-bf08",
+            "childId": "1556-9b56-fba6-4370",
+            "childName": "Leader",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "eed7-d8ec-fba2-f725",
+            "childId": "7dcd-7f61-69a7-0294",
+            "childName": "Support",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 70},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0}
+        ],
+        "infoLinks": [
+          {"name": "Battle Focus", "id": "16c8-bec2-4205-f5e0", "hidden": false, "targetId": "c324-e193-e23c-7d2e", "type": "rule"},
+          {"name": "Stealth", "id": "2e40-5715-5175-7d8a", "hidden": false, "targetId": "bec5-4288-34a6-ccfa", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Bladestorm",
+            "id": "b5a6-002b-fc43-a4bc",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "This unit's ranged attacks that target a unit within half range have have **[SUSTAINED HITS 1]**.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "4 Dire Avengers",
+            "id": "6a8c-3359-623d-eace",
+            "hidden": false,
+            "sortIndex": 3,
+            "constraints": [
+              {"id": "0dba-5d02-7585-d69b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+              {"id": "88db-cece-eb76-784d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Dire Avenger",
+                "id": "a2f3-86e8-b365-ef52",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "2adc-43cf-0a08-162c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+                  {"id": "80a2-3cec-68cf-5fdd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Avenger Shuriken Catapult",
+                    "id": "b54a-7b2e-bae6-3653",
+                    "collective": true,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "e007-ad30-b419-57b4",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "29df-aa3f-7bc1-fd4b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "8002-8d1b-f3db-7c19", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Dire Avenger",
+                    "id": "8746-2497-f6be-1461",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "7\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "W", "$text": "1", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Close Combat Weapon",
+                    "id": "506d-3465-157e-6ae1",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "2f7f-f27e-8149-b20a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "8c4e-2f2c-da4c-f240", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Weapon Strike",
+                        "id": "f2e7-4728-63f2-36c1",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "S", "$text": "3", "typeId": "ab33-d393-96ce-ccba"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dire Avenger Exarch",
+            "id": "94e4-0d26-0019-d3ef",
+            "hidden": false,
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "name": "Dire Avenger Exarch",
+                "id": "ae15-ee27-3a04-f80a",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "d1e8-8c60-fe73-6ea5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3f6a-8d5c-62cd-7ff9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Power Glaive",
+                    "id": "e9ca-ca60-900c-f8b4",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "090c-5411-6c6d-eaf9",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "4336-2650-1b8f-c984", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4be3-b16c-7146-7332", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Shimmershield",
+                    "id": "380e-07e1-9b7f-de2f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "3143-f757-21ec-4a92",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "2ff0-a4d0-ceaa-8d2a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "76ca-03de-7ca5-22ef", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Dire Avenger Exarch",
+                    "id": "b33e-e186-bf40-a1b4",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "7\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Enhancements",
+        "id": "4e2c-4ba5-749f-745a",
+        "collapsible": true,
+        "hidden": false,
+        "constraints": [
+          {"id": "c45b-afd2-418c-4c15", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "d46c-5adc-34f2-09f1",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "91d7-7c47-beba-a140",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Guided Jump",
+            "id": "81a9-3e2f-0181-e550",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "costs": [
+              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 20},
+              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+              {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 1}
+            ],
+            "infoLinks": [{"name": "Scouts 6\"", "id": "8c04-fe93-8216-bf5b", "hidden": false, "targetId": "08fb-4cb5-36fb-d638", "type": "rule"}],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "432f-4202-c91c-9f06", "childName": "Warp Spiders", "field": "selections", "scope": "parent", "shared": true, "type": "notInstanceOf", "value": 1}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Guided Jump",
+                "id": "dc5d-5a47-df20-8538",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "Upgrade: **KYGHARIL'S PROTECTORS WARP SPIDERS** unit only. This unit has **Scouts 6\"**.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ]
+          },
+          {
+            "name": "Seer's Hand",
+            "id": "3f4a-8dc2-2010-cab7",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "costs": [
+              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 20},
+              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+              {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "7ffc-5ee2-121a-2659", "childName": "Spiritseer", "field": "selections", "scope": "parent", "shared": true, "type": "notInstanceOf", "value": 1}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Seer's Hand",
+                "id": "e732-1176-784a-e2ca",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "**KYGHARIL'S PROTECTORS SPIRITSEER** model only. At the end of your Movement phase, you can select one friendly **KYGHARIL'S PROTECTORS WRAITHBLADES** unit within 12\" of this model:\n- That unit **heals** D3 wounds.\n- That unit's attacks have **[PRECISION]** until the start of your next Movement phase.",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

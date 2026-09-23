@@ -1,0 +1,921 @@
+{
+  "gameSystem": {
+    "name": "Warhammer 40,000 11th Edition: Combat Patrol",
+    "id": "e46c-e9e7-d2bc-606b",
+    "authorName": "TBarker746 (adapted from work by Acebaur, Dunamis55 and MadSpy)",
+    "battleScribeVersion": 2.03,
+    "readme": "",
+    "revision": 14,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Character", "id": "9cfd-1c32-585f-7d5c", "hidden": false},
+      {"name": "Epic Hero", "id": "4f3a-f0f7-6647-348d", "hidden": false},
+      {"name": "Infantry", "id": "cf47-a0d7-7207-29dc", "hidden": false},
+      {"name": "Monster", "id": "9693-cf84-fe69-37a9", "hidden": false},
+      {"name": "Battleline", "id": "e338-111e-d0c6-b687", "hidden": false},
+      {"name": "Dedicated Transport", "id": "ba07-411c-2832-1f79", "hidden": false},
+      {"name": "Mounted", "id": "14a0-40c9-2748-ae6e", "hidden": false},
+      {"name": "Captain", "id": "2d7f-1892-2fd0-e29c", "hidden": false},
+      {"name": "Grenades", "id": "5a61-81ac-eb7c-a87e", "hidden": false},
+      {"name": "Imperium", "id": "aff3-d6a3-2a95-9dc", "hidden": false},
+      {"name": "Configuration", "id": "4ac9-fd30-1e3d-b249", "hidden": false},
+      {"name": "Unit", "id": "1160-70ae-a862-b1a8", "hidden": false},
+      {"name": "Fly", "id": "c619-2086-bbcf-69c9", "hidden": false},
+      {"name": "Smoke", "id": "6df-937-16bc-8c1a", "hidden": false},
+      {"name": "Psyker", "id": "13bf-2bee-3ae0-b414", "hidden": false},
+      {"name": "Vehicle", "id": "dbd4-63-af05-998", "hidden": false},
+      {"name": "Walker", "id": "6dda-e157-334d-e93a", "hidden": false},
+      {"name": "Transport", "id": "75e8-57c4-40e3-1817", "hidden": false},
+      {"name": "Aircraft", "id": "63f1-e6e8-f6f6-a4f0", "hidden": false},
+      {"name": "Fortification", "id": "19d7-9c74-2140-5851", "hidden": false},
+      {"name": "Towering", "id": "d666-e2c9-b6cc-5716", "hidden": false},
+      {"name": "Titanic", "id": "5929-ad51-d006-e008", "hidden": false},
+      {"name": "Beast", "id": "4c3e-9310-a516-3590", "hidden": false},
+      {"name": "Chaos", "id": "4c00-2578-faf5-6918", "hidden": false},
+      {"name": "Faction: Tyranids", "id": "d1d8-6ae0-1be7-e9e", "hidden": false},
+      {"name": "Faction: Drukhari", "id": "1015-db48-a2fa-c7da", "hidden": false},
+      {"name": "Faction: Asuryani", "id": "4378-1827-4988-be4e", "hidden": false},
+      {"name": "Faction: Astra Militarum", "id": "fa45-57e-930e-602b", "hidden": false},
+      {"name": "Faction: Adepta Sororitas", "id": "fd71-afa6-b13b-7fda", "hidden": false},
+      {"name": "Faction: Necrons", "id": "ee0-cf31-4fb5-6b26", "hidden": false},
+      {"name": "Slaanesh", "id": "b2a9-ede5-7a83-4da8", "hidden": false},
+      {"name": "Nurgle", "id": "ed0d-8e2a-225c-2340", "hidden": false},
+      {"name": "Khorne", "id": "4bd-5ee0-f179-2fc5", "hidden": false},
+      {"name": "Tzeentch", "id": "b188-114f-6ba5-79a1", "hidden": false},
+      {"name": "Faction: Adeptus Astartes", "id": "6e7-40c-58d9-e402", "hidden": false},
+      {"name": "Faction: Adeptus Mechanicus", "id": "5418-f86b-6e76-c5a", "hidden": false},
+      {"name": "Faction: Genestealer Cults", "id": "226b-cf1e-353a-ae7f", "hidden": false},
+      {"name": "Faction: World Eaters", "id": "bd1d-c1a5-6ca2-c791", "hidden": false},
+      {"name": "Faction: Leagues of Votann", "id": "8474-765-16a9-f00d", "hidden": false},
+      {"name": "Faction: Death Guard", "id": "9888-ddb2-a141-6037", "hidden": false},
+      {"name": "Faction: T'au Empire", "id": "3d58-2655-391e-ecc", "hidden": false},
+      {"name": "Faction: Adeptus Custodes", "id": "eea5-aeaf-bbf0-d5ee", "hidden": false},
+      {"name": "Faction: Orks", "id": "56cc-5f43-2403-8da0", "hidden": false},
+      {"name": "Faction: Thousand Sons", "id": "7002-1fbb-7571-e8e7", "hidden": false},
+      {"name": "Faction: Grey Knights", "id": "d564-3284-bf44-b873", "hidden": false},
+      {"name": "Faction: Agents of the Imperium", "id": "5128-90b-e4a5-dcbd", "hidden": false},
+      {"name": "Faction: Dark Angels", "id": "aab1-4f05-fabe-5ba5", "hidden": false},
+      {"name": "Faction: Deathwatch", "id": "d39c-9989-db7f-d815", "hidden": false},
+      {"name": "Faction: Blood Angels", "id": "62ac-ef42-27b4-ae7", "hidden": false},
+      {"name": "Faction: Space Wolves", "id": "a0d9-c115-2a-8330", "hidden": false},
+      {"name": "Faction: Black Templars", "id": "9249-acae-2882-d95", "hidden": false},
+      {"name": "Faction: Imperial Fists", "id": "97aa-d0e4-71c7-96c3", "hidden": false},
+      {
+        "name": "Warlord",
+        "id": "5c0e-4c31-d51b-e470",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "16ac-a6c9-6d9a-d6d5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "3d50-6d29-4f91-8f73",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {"name": "Daemon", "id": "9c0e-7e25-4580-e439", "hidden": false},
+      {"name": "Primarch", "id": "6474-0ce3-6b5a-120c", "hidden": false},
+      {"name": "Daemon Prince", "id": "4f09-0141-6c70-6c5a", "hidden": false},
+      {"name": "Swarm", "id": "b00b-5bae-444f-964e", "hidden": false},
+      {"name": "Drone", "id": "2471-e2e0-3f55-d6cb", "hidden": false},
+      {"name": "Great Devourer", "id": "7850-cc5a-c191-b80d", "hidden": false},
+      {"name": "Retinue", "id": "cc77-a53-fca8-f48e", "hidden": false},
+      {"name": "Terminator", "id": "740a-892c-8958-defa", "hidden": false},
+      {"name": "Rhino", "id": "50a2-5557-84bb-ca4d", "hidden": false},
+      {"name": "Jump Pack", "id": "dda2-bb0a-215e-ad9c", "hidden": false},
+      {"name": "Questoris", "id": "e4d6-1a77-132b-f39d"},
+      {"name": "Dominus", "id": "af4c-b971-a31c-669c"},
+      {"name": "Cerastus", "id": "481c-3b2e-5c99-c248", "hidden": false},
+      {"name": "Artillery", "id": "8cab-448d-37b7-32bc", "hidden": false},
+      {"name": "Faction: Harlequins", "id": "a5a2-d0c0-0349-d226", "hidden": false},
+      {"name": "Psychic Weapon", "id": "4546-4a0c-b3be-e84c", "hidden": true},
+      {"name": "Extra Attacks Weapon", "id": "84c4-6d1e-e724-bd6e", "hidden": true},
+      {"name": "Torrent Weapon", "id": "064a-0470-60eb-e3ef", "hidden": true},
+      {"name": "Ranged Weapon", "id": "eeda-8544-a2f3-3fab", "comment": "Used for Enhancement upgrades", "hidden": true},
+      {"name": "Melee Weapon", "id": "ccdd-3987-11ed-90cd", "comment": "Used for Enhancement upgrades", "hidden": true},
+      {"name": "Pistol Weapon", "id": "1db0-c6b5-19db-8d0c", "hidden": true},
+      {"name": "Death Company", "id": "7278-781b-ce6c-d23c", "hidden": false},
+      {
+        "name": "Attacks Dx Weapon",
+        "id": "e993-e086-6de1-12af",
+        "comment": "Weapons that have D3/D6 but no \"+x\" in their Attacks characteristic - used for logic calculations",
+        "hidden": true
+      },
+      {
+        "name": "Damage Dx Weapon",
+        "id": "4986-bf86-beb4-13ac",
+        "comment": "Weapons that have D3/D6 but no \"+x\" in their Damage characteristic - used for logic calculations",
+        "hidden": true
+      },
+      {
+        "name": "Attacks Dx+0 Modifier",
+        "id": "6337-b83b-0d1e-5770",
+        "comment": "Flags a weapon that has had a +0 added to a D3/D6 Attacks characteristic - used for logic calculations",
+        "hidden": true
+      },
+      {
+        "name": "Damage Dx+0 Modifier",
+        "id": "982b-de77-dd2d-d9bd",
+        "comment": "Flags a weapon that has had a +0 added to a D3/D6 Damage characteristic - used for logic calculations",
+        "hidden": true
+      },
+      {"name": "Tech-Priest", "id": "59a9-b5cc-7c11-aaad", "hidden": false},
+      {
+        "name": "Ministorum Priest",
+        "id": "cc88-9467-86ac-4ca2",
+        "hidden": false,
+        "constraints": [{"id": "9ad1-8aef-0d46-3b1b", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 3}]
+      },
+      {
+        "name": "Sanctifiers",
+        "id": "9d4f-4beb-107d-3175",
+        "hidden": false,
+        "constraints": [{"id": "3b97-07bb-1241-9cc6", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 3}]
+      },
+      {"name": "Assault Weapon", "id": "e106-0758-7137-2432", "hidden": true},
+      {"name": "Reference", "id": "eef1-be80-500a-edfc", "hidden": false},
+      {"name": "Dreadnought", "id": "c97c-376-e2e0-1dd2", "hidden": false},
+      {"name": "Supreme Commander", "id": "75fe-c657-43c6-7c09", "hidden": true},
+      {"name": "Unbound Adversaries", "id": "9440-07f1-b09d-ce8b", "hidden": false},
+      {"name": "Lesser Daemon", "id": "f927-898a-ebe2-1aca", "hidden": false},
+      {"name": "Daemonic Beasts", "id": "a783-fe90-2280-47ec", "hidden": false},
+      {"name": "Mobile", "id": "355c-0ee6-3cde-6c71", "hidden": false},
+      {"name": "Frame", "id": "b927-8eeb-7cc3-8dec", "hidden": false},
+      {"name": "Explosives", "id": "e33d-891d-33aa-e9bf", "hidden": false},
+      {"name": "Disruption", "id": "ecf8-cf72-7d5b-1b5b", "hidden": false},
+      {"name": "Priority Assets", "id": "0936-9767-1cc7-52ae", "hidden": false},
+      {"name": "Purge the Foe", "id": "6fe0-3dbe-f7e0-10bb", "hidden": false},
+      {"name": "Take and Hold", "id": "1cc1-f11a-4e8f-1bcc", "hidden": false},
+      {"name": "Reconnaissance", "id": "b4a7-5083-fe94-4d24", "hidden": false},
+      {"name": "Leader", "id": "1556-9b56-fba6-4370", "hidden": true},
+      {"name": "Support", "id": "7dcd-7f61-69a7-0294", "hidden": true},
+      {"name": "Rapid Fire Weapon", "id": "751c-b78a-45fa-cc5f", "comment": "Used for Enhancement upgrades", "hidden": true},
+      {"name": "Kill Team", "id": "81b0-a893-4fb7-c298", "hidden": false},
+      {"name": "Melta Weapon", "id": "a5ab-185a-4855-0cb8", "hidden": true},
+      {"name": "Possessed", "id": "3d1c-7f16-1489-fac3", "hidden": false},
+      {"name": "Plasma", "id": "cb29-f4bb-ff15-6b11", "hidden": false},
+      {"name": "Enhancement", "id": "b5b3-44ea-31e1-f06d", "hidden": false},
+      {"name": "Aeldari", "id": "e035-51fc-813a-1313", "hidden": false}
+    ],
+    "entryLinks": [{"name": "Force Disposition", "id": "8bc8-6bfe-78bd-2480", "hidden": false, "import": true, "targetId": "2f69-9148-45b4-86a8", "type": "selectionEntry"}],
+    "forceEntries": [
+      {
+        "name": "Army Roster",
+        "id": "bb9d-299a-ed60-2d8a",
+        "hidden": false,
+        "readme": "Please report any issues with the data via the Report Issue functionality found either at the top right of the app (on web) or in the Roster menu (on mobile), ensuring you select the correct option based on the problem you are experiencing.\n\nIssues with Yellowscribe/TTS should first be reported as New Recruit issues, not data issues.\n\n**PLEASE DO NOT REPORT ISSUES ON DISCORD!**\n",
+        "categoryLinks": [
+          {"name": "Configuration", "id": "d5de-ee57-ad4b-e4b7", "hidden": false, "primary": false, "targetId": "4ac9-fd30-1e3d-b249"},
+          {"name": "Warlord", "id": "fe2a-ca94-88fa-c8d2", "hidden": false, "primary": false, "targetId": "5c0e-4c31-d51b-e470"},
+          {"name": "Unit", "id": "a41a-6330-4718-d8d2", "hidden": false, "primary": false, "targetId": "1160-70ae-a862-b1a8"},
+          {"name": "Reference", "id": "3761-5a4e-79e0-3c18", "hidden": false, "targetId": "eef1-be80-500a-edfc"}
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Unit",
+        "id": "c547-1836-d8a-ff4f",
+        "sortIndex": 1,
+        "characteristicTypes": [
+          {"name": "M", "id": "e703-ecb6-5ce7-aec1"},
+          {"name": "T", "id": "d29d-cf75-fc2d-34a4"},
+          {"name": "Sv", "id": "450-a17e-9d5e-29da"},
+          {"name": "W", "id": "750a-a2ec-90d3-21fe"},
+          {"name": "LD", "id": "58d2-b879-49c7-43bc"},
+          {"name": "OC", "id": "bef7-942a-1a23-59f8"},
+          {
+            "name": "InSv",
+            "id": "55a7-5b54-c60d-11dc",
+            "formatRules": [{"name": "New Format Rule", "id": "11c5-ee61-344f-d1a1", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}]
+          }
+        ]
+      },
+      {
+        "name": "Ranged Weapons",
+        "id": "f77d-b953-8fa4-b762",
+        "sortIndex": 2,
+        "characteristicTypes": [
+          {"name": "Range", "id": "9896-9419-16a1-92fc"},
+          {"name": "A", "id": "3bb-c35f-f54-fb08"},
+          {"name": "BS", "id": "94d-8a98-cf90-183e"},
+          {"name": "S", "id": "2229-f494-25db-c5d3"},
+          {"name": "AP", "id": "9ead-8a10-520-de15"},
+          {"name": "D", "id": "a354-c1c8-a745-f9e3"},
+          {"name": "Keywords", "id": "7f1b-8591-2fcf-d01c"}
+        ]
+      },
+      {"name": "Abilities", "id": "9cc3-6d83-4dd3-9b64", "sortIndex": 4, "characteristicTypes": [{"name": "Description", "id": "9b8f-694b-e5e-b573"}]},
+      {
+        "name": "Melee Weapons",
+        "id": "8a40-4aaa-c780-9046",
+        "sortIndex": 3,
+        "characteristicTypes": [
+          {"name": "Range", "id": "914c-b413-91e3-a132", "defaultValue": "Melee"},
+          {"name": "A", "id": "2337-daa1-6682-b110"},
+          {"name": "WS", "id": "95d1-95f-45b4-11d6"},
+          {"name": "S", "id": "ab33-d393-96ce-ccba"},
+          {"name": "AP", "id": "41a0-1301-112a-e2f2"},
+          {"name": "D", "id": "3254-9fe6-d824-513e"},
+          {"name": "Keywords", "id": "893f-9000-ccf7-648e"}
+        ]
+      },
+      {"name": "Transport", "id": "74f8-5443-9d6d-1f1e", "sortIndex": 6, "characteristicTypes": [{"name": "Capacity", "id": "30f2-be70-861d-1b84"}]},
+      {"name": "Psychic Abilities", "id": "7e03-38c2-7fea-e955", "hidden": false, "characteristicTypes": [{"name": "Descriptions", "id": "1917-301f-5d49-2f76"}]}
+    ],
+    "publications": [
+      {
+        "name": "Github",
+        "id": "8db3-575d-91b-47f8",
+        "hidden": false,
+        "publisherUrl": "https://github.com/TBarker746/wh40k-11e-combat-patrol",
+        "shortName": "TBarker746/wh40k-11e-combat-patrol"
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Fortification",
+        "id": "fa4e-5ac8-11a6-78d2",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "While an enemy unit is only within Engagement Range of one or more ^^**Fortifications**^^ from your army:\n- That unit can still be selected as the target of ranged attacks, but each time such an attack is made, unless it is made with a Pistol, subtract 1 from the Hit roll.\n- Models in that unit do not need to take Desperate Escape tests due to Falling Back while Battle-shocked, except for those that will move over enemy models when doing so.",
+            "typeId": "9b8f-694b-e5e-b573"
+          }
+        ]
+      },
+      {
+        "name": "Lord of Deceit (Aura)",
+        "id": "8332-466b-a51f-63ab",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP.",
+            "typeId": "9b8f-694b-e5e-b573"
+          }
+        ]
+      },
+      {
+        "name": "Invulnerable Save (4+)",
+        "id": "5b77-29f8-7b77-75e3",
+        "comment": "Single model",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [{"name": "Description", "$text": "This model has a 4+ invulnerable save.", "typeId": "9b8f-694b-e5e-b573"}]
+      },
+      {
+        "name": "Invulnerable Save (5+)",
+        "id": "27f4-7449-a636-ae8c",
+        "comment": "Single model",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [{"name": "Description", "$text": "This model has a 5+ invulnerable save.", "typeId": "9b8f-694b-e5e-b573"}]
+      },
+      {
+        "name": "Invulnerable Save (5+*)",
+        "id": "8552-862d-6a49-4879",
+        "comment": "Single model - ranged only",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [{"name": "Description", "$text": "This model has a 5+ invulnerable save against ranged attacks.", "typeId": "9b8f-694b-e5e-b573"}]
+      },
+      {
+        "name": "Invulnerable Save (4+*)",
+        "id": "5a7a-57fa-9801-4e25",
+        "comment": "Single model - ranged only",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [{"name": "Description", "$text": "This model has a 4+ invulnerable save against ranged attacks.", "typeId": "9b8f-694b-e5e-b573"}]
+      },
+      {
+        "name": "Invulnerable Save (4+*)",
+        "id": "1c63-d49f-380c-4aa8",
+        "comment": "Single model - melee only",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [{"name": "Description", "$text": "This model has a 4+ invulnerable save against melee attacks.", "typeId": "9b8f-694b-e5e-b573"}]
+      },
+      {
+        "name": "Invulnerable Save (4+*)",
+        "id": "9fa6-3128-6c5b-55f6",
+        "comment": "Unit - melee only",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [{"name": "Description", "$text": "Models in this unit have a 4+ invulnerable save against melee attacks.", "typeId": "9b8f-694b-e5e-b573"}]
+      },
+      {
+        "name": "Invulnerable Save (5+*)",
+        "id": "c63d-bb92-87ae-6e08",
+        "comment": "Unit - ranged only",
+        "hidden": false,
+        "typeId": "9cc3-6d83-4dd3-9b64",
+        "typeName": "Abilities",
+        "characteristics": [{"name": "Description", "$text": "Models in this unit have a 5+ invulnerable save against ranged attacks.", "typeId": "9b8f-694b-e5e-b573"}]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Pistol",
+        "id": "8bf7-8812-923d-29e4",
+        "description": "**[PISTOL]** and **[CLOSE-QUARTERS]** are identical for all rules purposes. \n\nUnits containing one or more models with a **[CLOSE-QUARTERS]** weapon can shoot using **close-quarters shooting** (10.06). When using another **shooting type**, for each model in that unit (excluding **MONSTER/VEHICLE** models), you can only select one of the following to make attacks with: \n- One or more of its **[CLOSE-QUARTERS]** weapons. \n- One or more of its other ranged weapons.",
+        "hidden": false,
+        "page": 25,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["PISTOL"]
+      },
+      {
+        "name": "Hazardous",
+        "id": "8367-374c-f87-c627",
+        "description": "Each time a unit is **selected to shoot** or **selected to fight**, after that unit has resolved all of its attacks, make a number of **hazard rolls** (06.03) for that unit equal to the number of **[HAZARDOUS]** weapons you selected in the Select Weapons step.",
+        "hidden": false,
+        "page": 28,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["HAZARDOUS"]
+      },
+      {
+        "name": "Leader",
+        "id": "b4dd-3e1f-41cb-218f",
+        "description": "Before the battle, in the Muster Armies step, for each leader and support unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it. Unless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Devastating Wounds",
+        "id": "be1e-ac8e-1e2c-3528",
+        "description": "Each time an attack made with a **[DEVASTATING WOUNDS]** weapon results in a **critical wound**, the attack sequence for that attack ends and the target unit suffers a number of **mortal wounds** equal to the **D** characteristic of that weapon. These are inflicted after resolving any normal damage inflicted by those attacks. \n**Mortal wounds** inflicted by **[DEVASTATING WOUNDS]** weapons can damage a maximum of one model for each **critical wound**; any remaining **mortal wounds** inflicted by that attack are lost. \n***Example:** An attack made with a **[DEVASTATING WOUNDS]** weapon with a **D** characteristic of 3 results in a **critical wound** against an Intercessor Squad, so inflicts 3 **mortal wounds**. The first 2 **mortal wounds** are sufficient to **destroy** 1 Intercessor model, so the remaining **mortal wound** is lost.*",
+        "hidden": false,
+        "page": 28,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["DEVASTATING WOUNDS"]
+      },
+      {
+        "name": "Assault",
+        "id": "fc8a-8c24-bae9-cc1c",
+        "description": "Units containing one or more models with an **[ASSAULT]** weapon can shoot using **assault shooting** (10.05).",
+        "hidden": false,
+        "page": 25,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["ASSAULT"]
+      },
+      {
+        "name": "Extra Attacks",
+        "id": "115b-79dc-f723-d761",
+        "description": "Each time a unit containing one or more models with an **[EXTRA ATTACKS]** weapon fights, those models will make attacks with those weapons in addition to any others. In the Select Weapons step (04.01), for each of those models, you must select: \n- All of that model’s **[EXTRA ATTACKS]** weapons. \n- One of that model’s other melee weapons, if possible.",
+        "hidden": false,
+        "page": 28,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["EXTRA ATTACKS"]
+      },
+      {
+        "name": "Twin-linked",
+        "id": "cf93-ad4d-2f08-a79d",
+        "description": "Each time an attack is made with a **[TWIN-LINKED]** weapon, you can re-roll the **wound roll**.",
+        "hidden": false,
+        "page": 25,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["TWIN-LINKED"]
+      },
+      {
+        "name": "Anti",
+        "id": "4111-82e3-9444-e942",
+        "description": "This ability always takes the form **[ANTI-X Y+]**. Each time an attack is made with an **[ANTI]** weapon, if the target unit has the keyword denoted by **X**, an unmodified **wound roll** of **Y+** is a **critical wound**.\n***Example:** An attack made with an **[ANTI-VEHICLE 4+]** weapon against a ^^**Vehicle**^^ unit will result in a **critical wound** on an unmodified **wound roll** of 4+, while an attack made with an **[ANTI-PSYKER 2+]** weapon against a ^^**Psyker**^^ unit will result in a **critical wound** on an unmodified **wound roll** of 2+.*",
+        "hidden": false,
+        "page": 28,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["ANTI"]
+      },
+      {
+        "name": "Sustained Hits",
+        "id": "1897-c22c-9597-12b1",
+        "description": "This ability always takes the form **[SUSTAINED HITS X]**. Each time an attack made with a **[SUSTAINED HITS]** weapon results in a **critical hit**, that attack results in a number of additional hits on the target as denoted by **X**.\n***Example:** An attack made with a **[SUSTAINED HITS 2]** weapon results in a **critical hit**. That attack therefore hits the target three times (once from the **critical hit**, and twice more from the **[SUSTAINED HITS 2]** ability).*",
+        "hidden": false,
+        "page": 28,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["SUSTAINED HITS"]
+      },
+      {
+        "name": "Heavy",
+        "id": "1202-10a8-78e9-4c67",
+        "description": "In your Shooting phase, each time an attack is made with a **[HEAVY]** weapon, add 1 to the **hit roll** if all of the following apply to the attacking unit: \n- That unit is **unengaged**. \n- That unit was not set up on the battlefield this turn. \n- No model in that unit has moved more than 3\" this turn.",
+        "hidden": false,
+        "page": 26,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["HEAVY"]
+      },
+      {
+        "name": "Melta",
+        "id": "7cdb-fb99-44a9-8849",
+        "description": "This ability always takes the form **[MELTA X]**. Each time a model makes an attack with a **[MELTA]** weapon, if the target unit was within half range of that weapon in the Select Targets step, until the attacking unit’s attacks have been resolved, add **X** to that weapon’s **D** characteristic. \n***Example:** A model targets a unit that is within half range of a **[MELTA 2]** weapon with a **D** characteristic of D6. While resolving those attacks, that weapon has a **D** characteristic of **D6+2**.*",
+        "hidden": false,
+        "page": 26,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["MELTA"]
+      },
+      {
+        "name": "Feel No Pain",
+        "id": "9bf4-280f-bbe2-6fbb",
+        "description": "This ability always takes the form **Feel No Pain X+**. Each time a model with this ability would lose a wound, roll one D6: on an **X+**, that wound is not lost. ",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Blast",
+        "id": "6c1f-1cf7-ff25-c99e",
+        "description": "Each time you gather attack dice for a **[BLAST]** weapon, add one additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down). If this ability takes the form **[BLAST X]**, each time you gather **attack dice** for such a weapon, add **X** additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down) instead. \n***Example:** If a **[BLAST 2]** weapon with an **A** characteristic of 3 targets a unit containing 12 models, you would gather four additional **attack dice** for that weapon (for a total of seven for that weapon).*",
+        "hidden": false,
+        "page": 26,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["BLAST"]
+      },
+      {
+        "name": "Precision",
+        "id": "9143-31ae-e0a6-6007",
+        "description": "While resolving attacks made with one or more **[PRECISION]** weapons, at the start of the Allocation Order step (05.03), if the target unit contains one or more **CHARACTER** models **visible** to one or more of the attacking models, the active player can select one allocation group that contains one of those **visible CHARACTER** models. If they do, until those attacks are resolved, or until that **CHARACTER** group is **destroyed** (whichever happens first), that **CHARACTER** group is the current allocation group.",
+        "hidden": false,
+        "page": 26,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["PRECISION"]
+      },
+      {
+        "name": "Indirect Fire",
+        "id": "4ddd-4e29-acdd-5e6d",
+        "description": "Units containing one or more models with an **[INDIRECT FIRE]** weapon can shoot using indirect shooting (10.07).",
+        "hidden": false,
+        "page": 26,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["INDIRECT FIRE"]
+      },
+      {
+        "name": "Lance",
+        "id": "2ebc-abdf-8129-6c57",
+        "description": "Each time an attack is made with a **[LANCE]** weapon, if the attacking model’s unit made a **charge move** this turn, add 1 to the **wound roll**.",
+        "hidden": false,
+        "page": 25,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["LANCE"]
+      },
+      {
+        "name": "Lethal Hits",
+        "id": "d1d1-611e-5191-1095",
+        "description": "Each time an attack made with a **[LETHAL HITS]** weapon results in a **critical hit**, you can choose for that attack to automatically wound the target. \n***Designer’s Note:** Choosing to automatically wound the target means that no **wound roll** is made for that attack. You may decide against this, as it means that attack cannot result in a **critical wound** and so cannot trigger other abilities such as [DEVASTATING WOUNDS].*",
+        "hidden": false,
+        "page": 25,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["LETHAL HITS"]
+      },
+      {
+        "name": "Ignores Cover",
+        "id": "4640-43e7-30b-215a",
+        "description": "Each time an attack is made with an **[IGNORES COVER]** weapon, the target cannot have the **benefit of cover** against that attack (13.08), including from rules that give a model or unit the **benefit of cover** (e.g. **Stealth**).",
+        "hidden": false,
+        "page": 25,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["IGNORES COVER"]
+      },
+      {
+        "name": "Rapid Fire",
+        "id": "c5c8-8b58-b8b6-7786",
+        "description": "This ability always takes the form **[RAPID FIRE X]**. Each time you gather **attack dice** for a **[RAPID FIRE]** weapon, add **X** additional **attack dice** if the target unit was within half range of that weapon in the Select Targets step. \n***Example:** If a **[RAPID FIRE 1]** weapon with an **A** characteristic of 1 targets a unit that is within half range, you would gather one additional **attack dice** for that weapon (for a total of two for that weapon).*",
+        "hidden": false,
+        "page": 25,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["RAPID FIRE"]
+      },
+      {
+        "name": "Torrent",
+        "id": "5edf-d619-23e0-9b56",
+        "description": "Each time an attack is made with a **[TORRENT]** weapon, that attack automatically hits the target.",
+        "hidden": false,
+        "page": 25,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["TORRENT"]
+      },
+      {
+        "name": "Scouts",
+        "id": "ada6-bac1-ffe0-d6f7",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Infiltrators",
+        "id": "c05d-f4c3-f091-4938",
+        "description": "During deployment, if every model in a unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from your opponent’s deployment zone and all enemy units.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Deep Strike",
+        "id": "7cb5-dd6b-dd87-ad3b",
+        "description": "Each time this unit makes an **ingress move** (20.04), if every model in this unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from all enemy units, even if that is within your opponent’s deployment zone.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Deadly Demise",
+        "id": "b68a-5ded-65ac-98c",
+        "description": "This ability always takes the form **Deadly Demise X**. Each time a model in this unit is **destroyed**, after the units embarked within it (if any) have made their **emergency disembark moves**, roll one D6. On a 6, that model suffers a **deadly demise**; each unit within 6\" of that model suffers a number of **mortal wounds** denoted by **X** (if this is a random number, roll separately for each unit within 6\"). \n***Example:** An Impulsor with a unit of Intercessors embarked within it is **destroyed** by ranged attacks. First, any unresolved attacks made by the attacking unit are resolved. Then the Intercessors make an **emergency disembark move**. Then the roll is made for the **Deadly Demise** ability, and on a 6, that ability is resolved. Finally, the Impulsor is removed from the battlefield.*",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Stealth",
+        "id": "bec5-4288-34a6-ccfa",
+        "description": "If every model in a unit has this ability, each time a ranged attack targets that unit, that unit has the **benefit of cover** against that attack (13.08).",
+        "hidden": false,
+        "page": 20,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Super-Heavy Walker",
+        "id": "5e13-1624-d280-418d",
+        "description": "Each time a unit with this ability makes a **normal**, **advance** or **fall-back move**: \n- Models in that unit can move through models (including **MONSTER/VEHICLE** models, but excluding **TITANIC** models) and can move horizontally through sections of **terrain features** that are 4\" or less in height. \n- Before moving that unit, you can select for all models in that unit to have the **MOBILE** keyword until that move ends. If you do, when that move ends, roll one D6: on a 1, that unit is battle-shocked. \n***Designer’s Note:** Gaining the **MOBILE** keyword for the duration of a move will enable models in that unit to move horizontally through **dense terrain features** (13.06).*\n",
+        "hidden": false
+      },
+      {
+        "name": "Lone Operative",
+        "id": "a8a0-8fe7-898-e0f3",
+        "description": "Unless part of an **attached** unit, this unit is not **visible** to enemy models unless they are within 12\" of this unit, and it cannot be targeted by **[INDIRECT FIRE]** weapons unless the attacking model is within 12\" of this unit. \nIf this ability takes the form **Lone Operative X\"**, unless part of an **attached** unit, this unit is not **visible** to enemy models unless they are within **X\"** of this unit, and it cannot be targeted by **[INDIRECT FIRE]** weapons unless the attacking model is within **X\"** of this unit.",
+        "hidden": false,
+        "page": 19,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Hover",
+        "id": "eec5-5f54-9c03-c305",
+        "description": "Each time this unit **takes to the skies** (21.03), do not subtract 2\" from the **maximum distance**.",
+        "hidden": false,
+        "page": 53,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Fights First",
+        "id": "24-c886-e8ba-5a89",
+        "description": "While every model in a unit has this ability, that unit is a **Fights First** unit. \nSee the Resolve Fights First Combats step in the Fight phase (12.04).",
+        "hidden": false,
+        "page": 32,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Psychic",
+        "id": "e9c4-2bb8-12ee-cd1b",
+        "description": "Each time an attack is made with a **[PSYCHIC]** weapon, you can ignore any or all modifiers to that attack’s **BS** or **WS** characteristic and any or all modifiers to the **hit roll**. Attacks made with **[PSYCHIC]** weapons are known as **psychic attacks** (this can be important for the triggering of other rules).",
+        "hidden": false,
+        "page": 38,
+        "publicationId": "48fc-15aa-b307-9443",
+        "alias": ["PSYCHIC"]
+      },
+      {
+        "name": "Firing Deck",
+        "id": "13b2-6518-dab3-7ea1",
+        "description": "This ability always takes the form **Firing Deck X**. In your Shooting phase, each time this **TRANSPORT** is **selected to shoot**, if one or more units are embarked within it, resolve the following sequence: \n1. Select up to **X** models embarked within this **TRANSPORT** (excluding models whose units have already been **selected to shoot** this phase). \n2. For each selected model, select one of its ranged weapons (excluding **[ONE SHOT]** weapons). \n3. Until this **TRANSPORT** has resolved all of its attacks, it has all of those selected weapons in addition to its other weapons. \n4. Until the end of the turn, units embarked within this **TRANSPORT** are not eligible to shoot. ",
+        "hidden": false,
+        "page": 17
+      },
+      {
+        "name": "One Shot",
+        "id": "cd26-1611-860a-91e4",
+        "description": "Each weapon with this ability can only be selected to make attacks with once per battle. \nIf a **destroyed** model is returned to a unit, all of its **[ONE SHOT]** weapons that have already been selected to make attacks with during the battle cannot be selected to make attacks with again. \nIf a new unit is added to an army, all **[ONE SHOT]** weapons in that unit can be selected to make attacks with once per battle.",
+        "hidden": false,
+        "alias": ["ONE SHOT"]
+      },
+      {
+        "name": "Cleave",
+        "id": "bf16-5d16-4725-f912",
+        "description": "This ability always takes the form **[CLEAVE X]**. Each time you gather **attack dice** for a **[CLEAVE]** weapon, if you only selected one target for all of that weapon’s attacks, add **X** additional **attack dice** for every five models that were in the target unit in the Select Targets step (rounding down). \n***Example: If a **[CLEAVE 1]** weapon with an **A** characteristic of 3 targets one unit containing 16 models, you would gather three additional **attack dice** for that weapon (for a total of six for that weapon).*",
+        "hidden": false,
+        "alias": ["CLEAVE"]
+      },
+      {
+        "name": "Close-quarters",
+        "id": "5238-5ad4-52f7-6eb4",
+        "description": "Units containing one or more models with a **[CLOSE-QUARTERS]** weapon can shoot using **close-quarters shooting** (10.06). When using another **shooting type**, for each model in that unit (excluding **MONSTER/VEHICLE** models), you can only select one of the following to make attacks with: \n- One or more of its **[CLOSE-QUARTERS]** weapons. \n- One or more of its other ranged weapons.",
+        "hidden": false
+      },
+      {
+        "name": "Support",
+        "id": "3342-2180-9c5d-925f",
+        "description": "Before the battle, in the Muster Armies step, for each **leader** and **support** unit in your army, you can select one friendly **bodyguard** unit that unit can lead. That unit will then lead that **bodyguard** unit for the battle and form an **attached** unit with it. \nUnless otherwise stated, each **bodyguard** unit can only have one **leader** unit and one **support** unit attached to it.",
+        "hidden": false
+      },
+      {
+        "name": "Feel No Pain 6+*",
+        "id": "9258-3a36-5e40-f185",
+        "description": "This ability always takes the form **Feel No Pain X+**. Each time a model with this ability would lose a wound, roll one D6: on an **X+**, that wound is not lost. ",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Feel No Pain 5+",
+        "id": "5e10-6d62-2624-80a8",
+        "description": "This ability always takes the form **Feel No Pain X+**. Each time a model with this ability would lose a wound, roll one D6: on an **X+**, that wound is not lost. ",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Feel No Pain 4+",
+        "id": "eed0-ef83-b6cf-dddf",
+        "description": "This ability always takes the form **Feel No Pain X+**. Each time a model with this ability would lose a wound, roll one D6: on an **X+**, that wound is not lost. ",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Feel No Pain 4+*",
+        "id": "699c-55ed-7fee-65ab",
+        "description": "This ability always takes the form **Feel No Pain X+**. Each time a model with this ability would lose a wound, roll one D6: on an **X+**, that wound is not lost. ",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Feel No Pain 5+*",
+        "id": "faec-8b1b-5a21-0087",
+        "description": "This ability always takes the form **Feel No Pain X+**. Each time a model with this ability would lose a wound, roll one D6: on an **X+**, that wound is not lost. ",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Feel No Pain 6+",
+        "id": "676c-ecb5-d24d-3540",
+        "description": "This ability always takes the form **Feel No Pain X+**. Each time a model with this ability would lose a wound, roll one D6: on an **X+**, that wound is not lost. ",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Scouts 6\"",
+        "id": "08fb-4cb5-36fb-d638",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Scouts 9\"",
+        "id": "9ea5-acc2-a2ac-257b",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Scouts 7\"",
+        "id": "6a04-6476-b45b-aef8",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Scouts 8\"",
+        "id": "a5f4-4af8-4735-7384",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Scouts 5\"",
+        "id": "b4d7-ba95-ed79-bafe",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Feel No Pain 3+*",
+        "id": "8ef2-30ad-3fc1-f7e4",
+        "description": "This ability always takes the form **Feel No Pain X+**. Each time a model with this ability would lose a wound, roll one D6: on an **X+**, that wound is not lost. ",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Damaged",
+        "id": "c68c-a968-354f-bb99",
+        "description": "This ability always takes the form **Damaged X**. While a model's remaining wounds are equal to or less than **X**, that model is **damaged**:\n- While a model is **damaged**, that model's attacks have -1 to **hit rolls**.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Force Disposition",
+        "id": "2f69-9148-45b4-86a8",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Configuration", "id": "4670-da6d-33d0-55f8", "hidden": false, "primary": true, "targetId": "4ac9-fd30-1e3d-b249"}],
+        "constraints": [
+          {
+            "id": "e219-1d50-0a55-a5de-min",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "e219-1d50-0a55-a5de-max",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [{"name": "Force Disposition", "id": "9c70-af87-0c32-afcf", "hidden": false, "import": true, "targetId": "eece-6d68-6710-7a7f", "type": "selectionEntryGroup"}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Force Disposition",
+        "id": "eece-6d68-6710-7a7f",
+        "hidden": false,
+        "constraints": [
+          {"id": "ad56-59fe-9aae-55ee-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "ad56-59fe-9aae-55ee-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Disruption",
+            "id": "31ed-50f0-6571-c4c1",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "ecf8-cf72-7d5b-1b5b",
+                    "childName": "Disruption",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Priority Assets",
+            "id": "081d-bc07-5d4e-ab22",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "0936-9767-1cc7-52ae",
+                    "childName": "Priority Assets",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Purge the Foe",
+            "id": "7da4-f0a6-65ec-da48",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "6fe0-3dbe-f7e0-10bb",
+                    "childName": "Purge the Foe",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Take and Hold",
+            "id": "a271-bfab-1b97-c55d",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "1cc1-f11a-4e8f-1bcc",
+                    "childName": "Take and Hold",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Reconnaissance",
+            "id": "3b81-de3e-f72c-b208",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b4a7-5083-fe94-4d24",
+                    "childName": "Reconnaissance",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

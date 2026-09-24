@@ -1,9 +1,9 @@
 {
   "catalogue": {
-    "name": "Imperium - Astra Militarum",
+    "name": "Astra Militarum: Drayden's Lance",
     "id": "60cd-d13a-fc9c-c826",
-    "authorContact": "Dunamis55",
-    "authorName": "BSData Developers",
+    "authorContact": "\n",
+    "authorName": "TBarker746 (based on work by Dunamis55)",
     "battleScribeVersion": 2.03,
     "gameSystemId": "e46c-e9e7-d2bc-606b",
     "gameSystemRevision": 1,
@@ -11,1669 +11,2530 @@
     "revision": 2,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "categoryEntries": [
+      {"name": "Attilan Rough Riders", "id": "1eba-3dba-477b-9283", "hidden": false},
+      {"name": "Cadian", "id": "ec4a-9386-40bd-7fb7", "hidden": false},
+      {"name": "Command Squad", "id": "4100-95dc-a489-ffbc", "hidden": false},
+      {"name": "Kasrkin", "id": "54e3-5045-251e-8453", "hidden": false},
+      {"name": "Regiment", "id": "c8a1-fef-5569-61c9", "hidden": false},
+      {"name": "Platoon", "id": "edff-c2d-8999-4f45", "hidden": false},
+      {"name": "Officer", "id": "e4d8-c6a1-7c23-ae25", "hidden": false},
+      {"name": "Drayden's Lance", "id": "2cc4-fa66-8808-fe35", "hidden": false}
+    ],
     "entryLinks": [
+      {"name": "Attilan Rough Riders", "id": "1c41-ff61-cecb-fce2", "hidden": false, "import": true, "targetId": "2299-bed9-3e-2b60", "type": "selectionEntry"},
+      {"name": "Cadian Command Squad", "id": "775d-c8f4-8d6a-e768", "hidden": false, "import": true, "targetId": "4d28-f2a7-67c1-eb2e", "type": "selectionEntry"},
+      {"name": "Kasrkin", "id": "3628-3edf-659e-6405", "hidden": false, "import": true, "targetId": "abe4-ca71-d5a7-3883", "type": "selectionEntry"},
+      {"name": "Detachment", "id": "c90d-57dd-0316-ce67", "hidden": false, "import": true, "targetId": "2a89-bc10-88ee-0e4a", "type": "selectionEntry"},
+      {"name": "Attilan Rough Riders", "id": "6eb3-4b3a-68e5-8442", "hidden": false, "import": true, "targetId": "0a0a-6e46-dfb0-ad4d", "type": "selectionEntry"}
+    ],
+    "profileTypes": [{"name": "Orders", "id": "40ba-9e97-7dae-eb27", "hidden": false, "characteristicTypes": [{"name": "Orders", "id": "40d9-dea9-ae84-f4e6"}]}],
+    "sharedProfiles": [
       {
-        "name": "‘Iron Hand’ Straken [Legends]",
-        "id": "f38c-6b5-d8d3-32db",
+        "name": "Cadian Veteran Guardsman",
+        "id": "d281-3ec2-383c-f786",
         "hidden": false,
-        "import": true,
-        "targetId": "913f-3cb6-fb80-7f6a",
-        "type": "selectionEntry"
+        "typeId": "c547-1836-d8a-ff4f",
+        "typeName": "Unit",
+        "characteristics": [
+          {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
+          {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+          {"name": "Sv", "$text": "5+", "typeId": "450-a17e-9d5e-29da"},
+          {"name": "W", "$text": "1", "typeId": "750a-a2ec-90d3-21fe"},
+          {"name": "LD", "$text": "7+", "typeId": "58d2-b879-49c7-43bc"},
+          {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+          {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"}
+        ]
       },
       {
-        "name": "Aegis Defence Line",
-        "id": "2c5d-9f8f-b19d-53be",
+        "name": "Attilan Rough Rider",
+        "id": "c9bb-ee31-dd59-b490",
+        "hidden": false,
+        "typeId": "c547-1836-d8a-ff4f",
+        "typeName": "Unit",
+        "characteristics": [
+          {"name": "M", "$text": "12\"", "typeId": "e703-ecb6-5ce7-aec1"},
+          {"name": "T", "$text": "4", "typeId": "d29d-cf75-fc2d-34a4"},
+          {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+          {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+          {"name": "LD", "$text": "7+", "typeId": "58d2-b879-49c7-43bc"},
+          {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+          {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"}
+        ]
+      },
+      {
+        "name": "Kasrkin",
+        "id": "6ed4-694c-ad3b-4b05",
+        "hidden": false,
+        "typeId": "c547-1836-d8a-ff4f",
+        "typeName": "Unit",
+        "characteristics": [
+          {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
+          {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+          {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+          {"name": "W", "$text": "1", "typeId": "750a-a2ec-90d3-21fe"},
+          {"name": "LD", "$text": "7+", "typeId": "58d2-b879-49c7-43bc"},
+          {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+          {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Voice Of Command",
+        "id": "53c9-34f6-2443-a95e",
+        "description": "If your Army Faction is **^^ASTRA MILITARUM^^**, **^^OFFICER^^** models with this ability can issue Orders. Each **^^OFFICER^^**'s datasheet will specify how many Orders it can issue and which units are eligible to receive those Orders. Each time an **^^OFFICER^^** model issues an Order, select one of the Orders below, then select one eligible friendly unit within 6\" of that **^^OFFICER^^** model to issue it to. **^^OFFICER^^** models can issue Orders in your Command phase and at the end of a phase in which they disembarked from a **^^TRANSPORT^^** or were set up on the battlefield.\n\nUntil the start of your next Command phase, the unit you selected is affected by that Order. Unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). Orders cannot be issued to Battle-shocked units, and if a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.\n\nOnly **^^ASTRA MILITARUM^^** models gain the benefit of an Order issued to their unit.\n\n**MOVE! MOVE! MOVE!**\nAdd 3\" to the Move characteristic of models in this unit.\n\n**FIX BAYONETS!**\nImprove the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.\n\n**TAKE AIM!**\nImprove the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1.\n\n**FIRST RANK, FIRE! SECOND RANK, FIRE!**\nImprove the Attacks characteristic of Rapid Fire weapons equipped by models in this unit by 1.\n\n**TAKE COVER!**\nImprove the Save characteristic of models in this unit by 1 (this cannot improve a model’s Save to better than 3+).\n\n**DUTY AND HONOUR!**\nImprove the Leadership and Objective Control characteristics of models in this unit by 1.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Attilan Rough Riders",
+        "id": "2299-bed9-3e-2b60",
         "hidden": false,
         "import": true,
-        "targetId": "cb99-456-f100-40ed",
-        "type": "selectionEntry",
-        "modifiers": [
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Mounted", "id": "78ec-23ad-e430-68c", "hidden": false, "primary": false, "targetId": "14a0-40c9-2748-ae6e"},
+          {"name": "Faction: Astra Militarum", "id": "3464-3482-a9a2-76d7", "hidden": false, "primary": false, "targetId": "fa45-57e-930e-602b"},
+          {"name": "Imperium", "id": "f27f-f1a9-2bcf-6999", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
+          {"name": "Regiment", "id": "3184-d4ba-b3c7-1bd8", "hidden": false, "primary": false, "targetId": "c8a1-fef-5569-61c9"},
+          {"name": "Attilan Rough Riders", "id": "22be-11d0-9dca-b3c6", "hidden": false, "primary": false, "targetId": "1eba-3dba-477b-9283"},
+          {"name": "Unit", "id": "6919-bb8d-168b-2477", "hidden": false, "primary": true, "targetId": "1160-70ae-a862-b1a8"},
+          {"name": "Drayden's Lance", "id": "3850-b8f8-b317-79af", "hidden": false, "primary": false, "targetId": "2cc4-fa66-8808-fe35"},
+          {"name": "Explosives", "id": "b67d-cffe-9f61-db0e", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+        ],
+        "constraints": [
+          {"id": "7a2c-2b6f-749d-6e80", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1},
           {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
+            "id": "e8b3-e18b-26d7-4e90",
+            "childId": "1556-9b56-fba6-4370",
+            "childName": "Leader",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "ca67-a25d-0881-2bfa",
+            "childId": "7dcd-7f61-69a7-0294",
+            "childName": "Support",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {"id": "fdf3-1f96-d98e-5a0c", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1}
+        ],
+        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 60}],
+        "profiles": [
+          {
+            "name": "Horsemasters",
+            "id": "33d0-c814-e859-7907",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When this unit makes a **fall-back move**, that move does not prevent this unit from being **eligible to shoot/declare a charge**.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "4 Rough Riders",
+            "id": "ecdd-dbb1-5f84-a148",
+            "defaultSelectionEntryId": "7fa6-4332-7294-9252",
+            "hidden": false,
+            "sortIndex": 3,
+            "constraints": [
+              {"id": "006d-0c5f-81af-6983", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 4},
+              {"id": "5a1d-ccde-3f30-b54d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Rough Rider with Hunting Lance",
+                "id": "7fa6-4332-7294-9252",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "e162-6db0-61e1-a90f", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "min", "value": 3},
+                  {"id": "74f8-1516-1f10-7c9a", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 3}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Laspistol",
+                    "id": "2770-f28d-a5b5-af32",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2689-4c0e-cdfb-3e5",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "257-12a7-abf6-55fd", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "3bb7-8532-3e2f-1670", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Lasgun",
+                    "id": "5e32-b004-54c2-2134",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "26c-19b3-720-8dcf",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "be65-18ed-7435-9826", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "9fd3-c589-abd8-9223", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Hunting Lance",
+                    "id": "9c04-b0e1-bad0-e66e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "70c3-75a8-983c-ea3d",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "c33e-9d9a-3193-95ca", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "284-a4f8-922a-2fef", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Steed's Hooves",
+                    "id": "6ab0-c004-8f6-ba5d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6316-de95-9075-9a8f",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "6b7e-c54a-552a-4027", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "60ae-0769-d228-5f88", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Attilan Rough Rider", "id": "bc06-422e-3c79-80f5", "hidden": false, "targetId": "c9bb-ee31-dd59-b490", "type": "profile"}]
+              },
+              {
+                "name": "Rough Rider with Goad Lance",
+                "id": "8677-54b2-77c7-e41f",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "c58b-9915-bc95-9533", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d419-a723-641e-8368", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Laspistol",
+                    "id": "683e-aedc-4e54-5f51",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2689-4c0e-cdfb-3e5",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "0aab-42c7-2079-063d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "69b7-7edc-2bf5-6dd5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Lasgun",
+                    "id": "f848-7142-20f6-a72a",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "26c-19b3-720-8dcf",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "084f-1831-bf14-ea65", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "e647-a597-1093-a660", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Goad Lance",
+                    "id": "7c9b-93f7-f897-ec4c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "9254-fb44-df-bd0d",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "5cdf-60a2-edcc-5c9a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "b242-6e40-5d08-8ef2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "ae34-b7fc-533c-09d0", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 2}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "ae34-b7fc-533c-09d0",
+                        "type": "set",
+                        "value": 1,
+                        "conditions": [{"childId": "model", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "lessThan", "value": 10}]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Steed's Hooves",
+                    "id": "6a19-5465-b40c-9d84",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6316-de95-9075-9a8f",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "0370-8903-6ead-d1c2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "24f5-c974-9230-75da", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Attilan Rough Rider", "id": "7e9b-dba1-5d67-400f", "hidden": false, "targetId": "c9bb-ee31-dd59-b490", "type": "profile"}]
+              }
+            ]
+          },
+          {
+            "name": "Rough Rider Sergeant",
+            "id": "3184-a028-d97e-2039",
+            "hidden": false,
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "name": "Rough Rider Sergeant",
+                "id": "dd83-c76-ca59-f320",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "7baf-f67b-5c56-50dc", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "4f59-bb46-77f0-353c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Lasgun",
+                    "id": "ff57-dc1d-a320-d032",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "a09c-6de4-e1c1-708a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "178e-aa7c-b51b-7a62", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "df38-5ae2-9884-a5c4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Laspistol",
+                    "id": "9e6b-4ffe-12cb-2d14",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2689-4c0e-cdfb-3e5",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "fa8d-3fc6-180-440c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "f674-93df-1cd7-8ba", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Steed's Hooves",
+                    "id": "9347-9298-95f9-89b6",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6316-de95-9075-9a8f",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "7b50-7888-dcf6-676b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "1a1c-2233-72f0-f505", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Hunting Lance",
+                    "id": "12bc-4b46-4fd-7ef2",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "70c3-75a8-983c-ea3d",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "bd8d-b90b-b5cc-ef76", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "812e-d1e6-465e-7442", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Attilan Rough Rider", "id": "f656-d6b-980b-b6cd", "hidden": false, "targetId": "c9bb-ee31-dd59-b490", "type": "profile"}],
+                "selectionEntries": [
+                  {
+                    "name": "Power Sabre",
+                    "id": "cd2d-cbc9-8af7-c981",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "5ac4-babc-84d4-f398", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "5b07-ed23-9d97-6388", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Power Sabre",
+                        "id": "2833-3b3-3862-25f0",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "S", "$text": "4", "typeId": "ab33-d393-96ce-ccba"},
+                          {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Armoured Sentinels",
-        "id": "29aa-34ba-8b9f-b6a6",
+        "name": "Cadian Command Squad",
+        "id": "4d28-f2a7-67c1-eb2e",
         "hidden": false,
         "import": true,
-        "targetId": "7e34-20cf-1149-74a1",
-        "type": "selectionEntry",
-        "modifiers": [
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Faction: Astra Militarum", "id": "3cdb-896d-b466-71ae", "hidden": false, "primary": false, "targetId": "fa45-57e-930e-602b"},
+          {"name": "Imperium", "id": "4a3c-ea74-27ca-a6f0", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
+          {"name": "Command Squad", "id": "1156-8557-3b5c-f8d7", "hidden": false, "primary": false, "targetId": "4100-95dc-a489-ffbc"},
+          {"name": "Cadian", "id": "5f58-e3e1-1f04-3e62", "hidden": false, "primary": false, "targetId": "ec4a-9386-40bd-7fb7"},
+          {"name": "Infantry", "id": "4b44-e0c9-a97e-f8b7", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Character", "id": "a349-1f3-fcee-fd84", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
+          {"name": "Platoon", "id": "ec6b-9bf2-58f5-89de", "hidden": false, "primary": false, "targetId": "edff-c2d-8999-4f45"},
+          {"name": "Leader", "id": "5ddd-0da9-fbb6-f27b", "hidden": false, "primary": false, "targetId": "1556-9b56-fba6-4370"},
+          {"name": "Warlord", "id": "94d9-0505-e823-5fa2", "hidden": false, "primary": true, "targetId": "5c0e-4c31-d51b-e470"},
+          {"name": "Drayden's Lance", "id": "c094-b769-4c26-f6c1", "hidden": false, "primary": false, "targetId": "2cc4-fa66-8808-fe35"},
+          {"name": "Explosives", "id": "b8e0-bd5d-9170-9747", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+        ],
+        "constraints": [
+          {"id": "f157-12f7-b496-b99e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1},
           {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
+            "id": "c9e1-29ec-15de-d21f",
+            "childId": "16ea-4f5b-d2d1-4d7d",
+            "childName": "Loyal Protector",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {"id": "a6ed-8538-87ec-c3c6", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 60},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Logistics Points", "typeId": "04b1-67f7-48cb-4f1f", "value": 0},
+          {"name": "Commendation Points", "typeId": "e969-59de-fdb7-7c4e", "value": 0}
+        ],
+        "infoLinks": [{"name": "Voice Of Command", "id": "b153-93f7-5c22-b7c3", "hidden": false, "targetId": "53c9-34f6-2443-a95e", "type": "rule"}],
+        "modifierGroups": [
+          {
+            "comment": "Regimental Standard modifiers",
+            "type": "and",
+            "conditions": [
+              {
+                "childId": "79b3-5c04-bd86-7ab4",
+                "childName": "Regimental Standard",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "self",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {
+                "affects": "self.entries.group.recursive.profiles.Unit",
+                "field": "annotation",
+                "join": ", ",
+                "skipIfPresent": "Regimental Standard",
+                "type": "append",
+                "value": "Regimental Standard"
+              },
+              {"affects": "self.entries.group.recursive.profiles.Unit", "field": "bef7-942a-1a23-59f8", "scope": "root-entry", "type": "increment", "value": 1}
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Orders",
+            "id": "9c13-76b5-43ba-b4f7",
+            "hidden": false,
+            "typeId": "40ba-9e97-7dae-eb27",
+            "typeName": "Orders",
+            "characteristics": [{"name": "Orders", "$text": "This unit's **OFFICER** can issue up to 2 Orders to **DRAYDEN'S LANCE** units.", "typeId": "40d9-dea9-ae84-f4e6"}]
+          },
+          {
+            "name": "Over There",
+            "id": "4248-cf6f-79c7-aba6",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the start of your Shooting phase, you can select one enemy unit within 24\" of this unit. That enemy unit has +3\" **detection range**.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Major Drayden",
+            "id": "9b16-d2ac-0438-bd82",
+            "hidden": false,
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "name": "Major Drayden",
+                "id": "e830-b3b0-1c4f-cc0d",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [
+                  {"name": "Character", "id": "dec4-d17d-3287-89d", "hidden": false, "primary": false, "targetId": "9cfd-1c32-585f-7d5c"},
+                  {"name": "Officer", "id": "c9df-57bb-1bcc-565d", "hidden": false, "primary": false, "targetId": "e4d8-c6a1-7c23-ae25"}
+                ],
+                "constraints": [
+                  {"id": "193e-6101-88c6-c14c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "942-cb01-a841-8acc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Enhancements",
+                    "id": "9339-9053-efb4-b44",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "65a0-4200-b349-dcb4",
+                    "type": "selectionEntryGroup"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Major Drayden",
+                    "id": "b6b-49bc-8871-f007",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "T", "$text": "3", "typeId": "d29d-cf75-fc2d-34a4"},
+                      {"name": "Sv", "$text": "5+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "7+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "OC", "$text": "1", "typeId": "bef7-942a-1a23-59f8"},
+                      {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"}
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Wargear",
+                    "id": "e96b-50ae-d75e-0f5f",
+                    "hidden": false,
+                    "sortIndex": 4,
+                    "entryLinks": [
+                      {
+                        "name": "Power Weapon",
+                        "id": "59aa-2a98-dd4-37bc",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "600b-6aef-1737-a654",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "51a3-7312-5656-30f0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                          {"id": "f8cf-9f50-de8b-2f85", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Plasma Pistol",
+                        "id": "417c-c979-778f-b448",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "abf2-656d-322e-3c7e",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "15b8-b212-b96e-270b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "d937-ba91-7e18-05e2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cadian Veteran Guardsmen",
+            "id": "e30e-3613-f593-fb0e",
+            "hidden": false,
+            "sortIndex": 3,
+            "selectionEntries": [
+              {
+                "name": "Cadian Veteran Guardsman with Powerfist",
+                "id": "e27a-8715-6403-beb2",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "42e2-2ff2-eb53-58bb", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "be7e-308c-7438-52e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Power Fist",
+                    "id": "eb83-9b0e-5697-be52",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f054-ef04-f991-1ccb",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "9e2a-f2b8-6e48-baa8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "3093-0d3e-ed76-1e56", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Bolt Pistol",
+                    "id": "dd81-91f7-2b89-9579",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "edce-b2da-b8c3-7c8b",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "af85-f380-a1d2-b0fd", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "c67d-2509-58a0-a0a0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Cadian Veteran Guardsman", "id": "8e55-9cde-624b-f2eb", "hidden": false, "targetId": "d281-3ec2-383c-f786", "type": "profile"}]
+              },
+              {
+                "name": "Cadian Veteran Guardsman with Medi-pack",
+                "id": "e41f-68bb-44b5-5d3e",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "9fc0-8911-597b-7adf", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "afa3-9f96-7202-460e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Medi-pack",
+                    "id": "ac25-6b4d-ef5f-cd02",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b9c9-d718-30ba-a99a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "de8a-9a98-84c6-bf7f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "c395-4d2a-68e9-ba6a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Gun Stocks",
+                    "id": "63a6-f69-cf77-436e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b349-9d3a-1a65-3e48",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "f83f-b45e-90a2-5d05", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "cf33-2e94-3da1-32d3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Lasgun",
+                    "id": "5d23-8eda-e2-5aac",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "a09c-6de4-e1c1-708a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "7cb0-15fd-f6f-c54c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "74f9-c716-8e01-ff1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {"name": "Cadian Veteran Guardsman", "id": "9663-8f6c-2297-969a", "hidden": false, "targetId": "d281-3ec2-383c-f786", "type": "profile"},
+                  {"name": "Feel No Pain 6+", "id": "afe1-9ff3-dc7c-4c11", "hidden": false, "targetId": "676c-ecb5-d24d-3540", "type": "rule"}
+                ]
+              },
+              {
+                "name": "Cadian Veteran Guardsman with Regimental Standard",
+                "id": "4ed7-c1f5-1761-ac4a",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "40a3-8276-3a14-0815", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "2222-c71e-3efc-84c8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Gun Stocks",
+                    "id": "26a4-73d2-680d-dc2e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b349-9d3a-1a65-3e48",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "5f5e-6f28-fc83-2420", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "280a-a855-0c3f-6217", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Lasgun",
+                    "id": "698a-b21d-4daf-b460",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "a09c-6de4-e1c1-708a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "f7f5-409d-7eaa-c83f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "9e94-b802-006f-91f1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Regimental Standard",
+                    "id": "5ee8-362b-78bb-25b2",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "79b3-5c04-bd86-7ab4",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "bc00-ecd9-c234-567f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "cc42-f36f-8b01-9ccb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Cadian Veteran Guardsman", "id": "8e68-9997-52a2-529c", "hidden": false, "targetId": "d281-3ec2-383c-f786", "type": "profile"}]
+              },
+              {
+                "name": "Cadian Veteran Guardsman with Master Vox",
+                "id": "ae98-c6b0-ca90-2de8",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "c8a-8578-aa41-3298", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "2ba3-8dc4-bbbe-920b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Gun Stocks",
+                    "id": "70d1-f0a4-f09d-ae0b",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b349-9d3a-1a65-3e48",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "2618-39f9-2714-34c4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "a540-038c-ad59-630c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Lasgun",
+                    "id": "b466-a708-51f6-a451",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "a09c-6de4-e1c1-708a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "f6dd-0c42-5096-f81b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "78c5-7eb7-9476-7403", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Master Vox",
+                    "id": "a3af-7443-34e7-8c9c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ed6b-6c67-4bb5-1405",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "2ba3-8dc4-bbbe-920b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "c8a-8578-aa41-3298", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Cadian Veteran Guardsman", "id": "97b2-b191-5c1a-6c7f", "hidden": false, "targetId": "d281-3ec2-383c-f786", "type": "profile"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kasrkin",
+        "id": "abe4-ca71-d5a7-3883",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Kasrkin", "id": "824b-8064-b2cc-4032", "hidden": false, "primary": false, "targetId": "54e3-5045-251e-8453"},
+          {"name": "Faction: Astra Militarum", "id": "5246-61c4-b729-3bfe", "hidden": false, "primary": false, "targetId": "fa45-57e-930e-602b"},
+          {"name": "Imperium", "id": "49b1-2cc3-7904-e421", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
+          {"name": "Regiment", "id": "2d79-bfeb-c154-2a34", "hidden": false, "primary": false, "targetId": "c8a1-fef-5569-61c9"},
+          {"name": "Infantry", "id": "df23-435d-f062-9fbe", "hidden": false, "primary": false, "targetId": "cf47-a0d7-7207-29dc"},
+          {"name": "Drayden's Lance", "id": "1572-4c1c-72e4-58eb", "hidden": false, "primary": false, "targetId": "2cc4-fa66-8808-fe35"},
+          {"name": "Explosives", "id": "cf64-9c72-534f-e2d7", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"},
+          {"name": "Unit", "id": "450b-98cd-9293-7a38", "hidden": false, "primary": true, "targetId": "1160-70ae-a862-b1a8"}
+        ],
+        "constraints": [
+          {"id": "a6a5-b9c1-53cc-f708", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+          {
+            "id": "42e9-baa5-8736-8104",
+            "childId": "1556-9b56-fba6-4370",
+            "childName": "Leader",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "6eaa-da69-2636-de54",
+            "childId": "7dcd-7f61-69a7-0294",
+            "childName": "Support",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {"id": "3e95-c46b-b689-5909", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+        ],
+        "costs": [
+          {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 105},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Logistics Points", "typeId": "04b1-67f7-48cb-4f1f", "value": 0},
+          {"name": "Commendation Points", "typeId": "e969-59de-fdb7-7c4e", "value": 0}
+        ],
+        "entryLinks": [
+          {
+            "name": "Enhancements",
+            "id": "373d-21fa-e0d6-c46b",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "65a0-4200-b349-dcb4",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Scouts",
+            "id": "626f-b1f6-a03c-f59a",
+            "hidden": false,
+            "targetId": "ada6-bac1-ffe0-d6f7",
+            "type": "rule",
+            "modifiers": [{"field": "name", "type": "append", "value": "6\""}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Warrior Elite",
+            "id": "9034-3b9d-d631-1da5",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "Once per battle round, at the start of any phase, you can select one Order to affect this unit until the start of your next Command phase, in addition to any other Orders issued to this unit by an **^^Officer^^** model this turn.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Kasrkin Troopers",
+            "id": "9a2a-d4b-eaa6-ccaf",
+            "defaultSelectionEntryId": "ecee-e0cc-22ab-d898",
+            "hidden": false,
+            "sortIndex": 3,
+            "constraints": [
+              {"id": "fc36-11d3-cd36-c266", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 9},
+              {"id": "7abe-5a8-21e1-f729", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 9}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Kasrkin Trooper",
+                "id": "ecee-e0cc-22ab-d898",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "e27b-e87e-cc7b-fdd0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "06a6-5934-37b5-61e5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Hot-shot Lasgun",
+                    "id": "72c6-46e-36ab-cdcd",
+                    "collective": true,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6536-7b98-3b50-d68a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "4a6c-52c5-f96c-4b12", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "c93f-7031-1fd7-1049", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Gun Stocks",
+                    "id": "846b-9cc3-ea95-dd66",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f61b-a631-1446-4453",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Kasrkin", "id": "3e8d-ff9b-c8c2-405c", "hidden": false, "targetId": "6ed4-694c-ad3b-4b05", "type": "profile"}]
+              },
+              {
+                "name": "Kasrkin Trooper with Hot-Shot Marksman Rifle",
+                "id": "bf07-a02f-f5f6-2ee4",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "a55e-8995-36c6-2202", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "5359-5bca-8b0d-d12f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Gun Stocks",
+                    "id": "b006-4ea5-f47b-da3a",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f61b-a631-1446-4453",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Kasrkin", "id": "b4a5-1387-9e2a-a083", "hidden": false, "targetId": "6ed4-694c-ad3b-4b05", "type": "profile"}],
+                "selectionEntries": [
+                  {
+                    "name": "Hot-shot Marksman Rifle",
+                    "id": "a611-64ab-2668-5e4b",
+                    "collective": true,
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "809d-55df-9f0d-1516", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "1fb4-e99a-3c58-5cd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [
+                      {"name": "Heavy", "id": "58dd-81d6-4623-cd7", "hidden": false, "targetId": "1202-10a8-78e9-4c67", "type": "rule"},
+                      {"name": "Precision", "id": "8c69-7834-a60f-3046", "hidden": false, "targetId": "9143-31ae-e0a6-6007", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Hot-shot Marksman Rifle",
+                        "id": "628a-48b2-ab4a-2881",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
+                          {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "HEAVY, PRECISION", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper with Melta Mine",
+                "id": "c925-593a-28fa-27b4",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "6e4d-e513-b6c7-30e1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "a395-9542-df49-8b54", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Gun Stocks",
+                    "id": "5fe7-945a-f0cd-59fa",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f61b-a631-1446-4453",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Hot-shot Laspistol",
+                    "id": "255-f896-3d64-550d",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "56ad-b03d-517e-124a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Kasrkin", "id": "e9ea-d116-edb7-951c", "hidden": false, "targetId": "6ed4-694c-ad3b-4b05", "type": "profile"}],
+                "selectionEntries": [
+                  {
+                    "name": "Melta Mine",
+                    "id": "ccd3-f55d-f292-fa81",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "132a-c413-10c-1ac3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "d2f0-b362-257-2c37", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Melta Mine",
+                        "id": "ade3-310d-a3e4-cb24",
+                        "hidden": false,
+                        "typeId": "9cc3-6d83-4dd3-9b64",
+                        "typeName": "Abilities",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "$text": "At the start of any phase, you can use this ability. If you do, select one enemy unit within 3\" of this model and roll one D6. On a 2+:\n- That enemy unit suffers D3 **mortal wounds**.\n- Or: If that enemy unit has **VEHICLE**, that enemy unit suffers 2D3 **mortal wounds**.",
+                            "typeId": "9b8f-694b-e5e-b573"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper with Vox-Caster",
+                "id": "befd-59d0-8dd1-e785",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "dac4-7da7-5b9b-35fa", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "0deb-595c-766b-41c7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Gun Stocks",
+                    "id": "a689-1e7f-b5ad-93c5",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "f61b-a631-1446-4453",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "79ac-56ab-9605-bc8a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "ee2b-c2d6-3c87-ac0a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Vox-Caster",
+                    "id": "8da4-678e-da6-e447",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "1922-17a9-c911-a6e2",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "07c7-c6cc-4464-7323", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "a863-e16c-e2fe-fce2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Hot-shot Lasgun",
+                    "id": "f35f-9df0-6848-e339",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6536-7b98-3b50-d68a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "26ee-fc87-fad2-36f7", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "cfa2-487c-761f-1b9e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Kasrkin", "id": "2abd-f5dd-c4ef-ada5", "hidden": false, "targetId": "6ed4-694c-ad3b-4b05", "type": "profile"}]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Kasrkin Trooper with Special Weapon",
+                "id": "f258-df41-fd9b-8891",
+                "hidden": false,
+                "constraints": [
+                  {"id": "31ec-4f5e-4b2a-8e32", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4},
+                  {"id": "74e1-9b8c-eab4-57cf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Kasrkin Trooper with Flamer",
+                    "id": "550d-8641-97be-9acf",
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "constraints": [
+                      {"id": "7a36-31ac-0473-bd73", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "f0f6-1c01-3772-20de", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Gun Stocks",
+                        "id": "c8ae-9c0b-effd-717b",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f61b-a631-1446-4453",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Flamer",
+                        "id": "58f9-6b56-3e39-33d4",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "ddae-e6-79d8-3f66",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "infoLinks": [{"name": "Kasrkin", "id": "825-fe6c-8c39-254e", "hidden": false, "targetId": "6ed4-694c-ad3b-4b05", "type": "profile"}]
+                  },
+                  {
+                    "name": "Kasrkin Trooper with Plasma Gun",
+                    "id": "9ca6-ab56-d7f1-cab1",
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "constraints": [
+                      {"id": "76e4-adac-5ac3-351e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "377d-4ed0-ba76-3294", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Gun Stocks",
+                        "id": "a88c-acd0-8370-f7dd",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f61b-a631-1446-4453",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Plasma Gun",
+                        "id": "f5cb-8d5c-5743-75ce",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "280a-959f-4c4f-aa28",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "infoLinks": [{"name": "Kasrkin", "id": "afa6-9c56-e4bb-2070", "hidden": false, "targetId": "6ed4-694c-ad3b-4b05", "type": "profile"}]
+                  },
+                  {
+                    "name": "Kasrkin Trooper with Hot-shot Volley Gun",
+                    "id": "4e36-8ce1-b07f-137d",
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "constraints": [
+                      {"id": "17e7-710b-15aa-bc7a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "8b7a-a9e3-8334-cfd7", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Gun Stocks",
+                        "id": "828d-c8d6-2174-155a",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f61b-a631-1446-4453",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Hot-shot Volley Gun",
+                        "id": "626f-84fc-9439-90fd",
+                        "collective": true,
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "7cc0-e698-77e7-2f5e",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "aee9-44ea-0206-8ef0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "3a28-3042-35cf-ccee", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "infoLinks": [{"name": "Kasrkin", "id": "abad-5405-1d1c-7971", "hidden": false, "targetId": "6ed4-694c-ad3b-4b05", "type": "profile"}]
+                  },
+                  {
+                    "name": "Kasrkin Trooper with Grenade Launcher",
+                    "id": "7b4b-d83d-a34b-acac",
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "constraints": [
+                      {"id": "6964-7523-45b1-19fe", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "6c4c-2f0d-6f8f-1236", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
+                    "entryLinks": [
+                      {
+                        "name": "Gun Stocks",
+                        "id": "c85c-2365-3c2-3097",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "f61b-a631-1446-4453",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      },
+                      {
+                        "name": "Grenade Launcher",
+                        "id": "e6d4-7bb5-77a2-5b4c",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "4e85-9167-68ce-8738",
+                        "type": "selectionEntry",
+                        "constraints": [
+                          {"id": "d707-6c9d-f24e-b6a5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e25b-bf6e-90ed-4390", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ]
+                      }
+                    ],
+                    "infoLinks": [{"name": "Kasrkin", "id": "7ec3-f7fe-23cc-4d54", "hidden": false, "targetId": "6ed4-694c-ad3b-4b05", "type": "profile"}]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Kasrkin Sergeant",
+            "id": "9bdf-dc4d-bd01-99e4",
+            "hidden": false,
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "name": "Kasrkin Sergeant",
+                "id": "5dab-e506-e8a8-c802",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "4dc0-336f-abda-e93a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ec6e-801c-d28a-ebdc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Plasma Pistol",
+                    "id": "772c-a1f9-5954-d001",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2da9-abbd-3c4d-361a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "0aa1-ae3c-d257-9cea", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "8698-9f4e-d8b1-8e4b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Chainsword",
+                    "id": "f5b8-84b1-30a5-8a58",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "3d79-ea50-dfa0-af68",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "7b48-6d4b-79bc-4915", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "0657-1c45-8c61-1c46", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Kasrkin", "id": "41f9-5b1b-89a3-337f", "hidden": false, "targetId": "6ed4-694c-ad3b-4b05", "type": "profile"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lasgun",
+        "id": "a09c-6de4-e1c1-708a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Rapid Fire", "id": "1787-b5ea-e822-a813", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Lasgun",
+            "id": "bf04-28bf-1b01-a8d3",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "3", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "RAPID FIRE 1", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Laspistol",
+        "id": "2689-4c0e-cdfb-3e5",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Ranged Weapon", "id": "7a0b-34ff-0292-a675", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"},
+          {"name": "Pistol Weapon", "id": "3ac4-f170-6ea8-6169", "hidden": false, "primary": false, "targetId": "1db0-c6b5-19db-8d0c"}
+        ],
+        "infoLinks": [{"name": "Close-quarters", "id": "fb04-21c8-9987-5c51", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Laspistol",
+            "id": "9210-c504-a4cf-6fac",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "3", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "CLOSE-QUARTERS", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Steed's Hooves",
+        "id": "6316-de95-9075-9a8f",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Extra Attacks Weapon", "id": "9a12-8c4f-7944-df92", "hidden": false, "primary": false, "targetId": "84c4-6d1e-e724-bd6e"}],
+        "infoLinks": [{"name": "Extra Attacks", "id": "36d2-d96c-8c1f-9bb7", "hidden": false, "targetId": "115b-79dc-f723-d761", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Steed's Hooves",
+            "id": "e118-7d82-396b-570f",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "4", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "EXTRA ATTACKS", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Goad Lance",
+        "id": "9254-fb44-df-bd0d",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon", "id": "9766-aec4-43f0-e738", "hidden": false, "primary": false, "targetId": "ccdd-3987-11ed-90cd"}],
+        "profiles": [
+          {
+            "name": "Goad Lance",
+            "id": "fa24-cde0-7c84-36c7",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "6", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "\n", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hunting Lance",
+        "id": "70c3-75a8-983c-ea3d",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon", "id": "59cf-2312-09de-ad4b", "hidden": false, "primary": false, "targetId": "ccdd-3987-11ed-90cd"}],
+        "infoLinks": [{"name": "Lance", "id": "15d4-36f9-9f83-b1c", "hidden": false, "targetId": "2ebc-abdf-8129-6c57", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "➤ Hunting Lance - Frag Tip",
+            "id": "b510-d28b-c017-1f4b",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "D6", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "4", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "LANCE", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          },
+          {
+            "name": "➤ Hunting Lance - Melta Tip",
+            "id": "aee-99bd-e0ba-f642",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "1", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "9", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "-4", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "D6", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "LANCE", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lasgun",
+        "id": "26c-19b3-720-8dcf",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Rapid Fire", "id": "43e6-4488-f0a6-9190", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Lasgun",
+            "id": "1310-c472-50e8-f5e6",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "3", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "Rapid Fire 1", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hot-shot Lasgun",
+        "id": "6536-7b98-3b50-d68a",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Rapid Fire", "id": "2a1c-d245-f911-b276", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Hot-shot Lasgun",
+            "id": "273-fbcd-db4-6029",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "3", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "RAPID FIRE 1", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hot-shot Laspistol",
+        "id": "56ad-b03d-517e-124a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Ranged Weapon", "id": "2def-f51e-08ba-0640", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"},
+          {"name": "Pistol Weapon", "id": "d998-983f-883a-7bd8", "hidden": false, "primary": false, "targetId": "1db0-c6b5-19db-8d0c"}
+        ],
+        "infoLinks": [{"name": "Close-quarters", "id": "2197-ac3f-4585-6f02", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Hot-shot Laspistol",
+            "id": "df1b-6c7b-70a8-c492",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "3", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "CLOSE-QUARTERS", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hot-shot Volley Gun",
+        "id": "7cc0-e698-77e7-2f5e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Rapid Fire", "id": "1d02-c640-5c3-c9e6", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Hot-shot Volley Gun",
+            "id": "b5f3-b2a8-e663-a253",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "30\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-1", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "RAPID FIRE 2", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gun Stocks",
+        "id": "f61b-a631-1446-4453",
+        "collective": true,
+        "comment": "A2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Gun Stocks",
+            "id": "e903-e46d-e2ee-a244",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "3", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Pistol",
+        "id": "abf2-656d-322e-3c7e",
+        "comment": "BS4+",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Ranged Weapon", "id": "a223-7986-ecf3-9077", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"},
+          {"name": "Pistol Weapon", "id": "2f64-4b2b-2f4e-7306", "hidden": false, "primary": false, "targetId": "1db0-c6b5-19db-8d0c"}
+        ],
+        "infoLinks": [
+          {"name": "Close-quarters", "id": "32d7-381-f231-de08", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"},
+          {"name": "Hazardous", "id": "a089-251a-b2cd-ec09", "hidden": false, "targetId": "8367-374c-f87-c627", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "➤ Plasma Pistol - Standard",
+            "id": "bd0f-b111-e732-a96a",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "7", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "CLOSE-QUARTERS", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          },
+          {
+            "name": "➤ Plasma Pistol - Supercharge",
+            "id": "2cf8-3625-67ba-d5f4",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "8", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "CLOSE-QUARTERS, HAZARDOUS", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Pistol",
+        "id": "2da9-abbd-3c4d-361a",
+        "comment": "BS3+",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Ranged Weapon", "id": "bddd-b94e-ee4d-d218", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"},
+          {"name": "Pistol Weapon", "id": "104e-0e12-64a5-b2fa", "hidden": false, "primary": false, "targetId": "1db0-c6b5-19db-8d0c"}
+        ],
+        "infoLinks": [
+          {"name": "Close-quarters", "id": "84b0-915a-9ac1-4118", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"},
+          {"name": "Hazardous", "id": "6f81-61f0-d97d-ee1b", "hidden": false, "targetId": "8367-374c-f87-c627", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "➤ Plasma Pistol - Standard",
+            "id": "7abb-27b8-6c54-eba2",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "7", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "CLOSE-QUARTERS", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          },
+          {
+            "name": "➤ Plasma Pistol - Supercharge",
+            "id": "ca8f-9ad1-f86c-b05d",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "8", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "CLOSE-QUARTERS, HAZARDOUS", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plasma Gun",
+        "id": "280a-959f-4c4f-aa28",
+        "comment": "BS3+",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Hazardous", "id": "d023-1aaf-f240-d9bd", "hidden": false, "targetId": "8367-374c-f87-c627", "type": "rule"},
+          {"name": "Rapid Fire", "id": "224a-8731-7e89-89b", "hidden": false, "targetId": "c5c8-8b58-b8b6-7786", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "➤ Plasma Gun - Standard",
+            "id": "376-de78-6095-db58",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "7", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "RAPID FIRE 1", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          },
+          {
+            "name": "➤ Plasma Gun - Supercharge",
+            "id": "f7fe-cc8d-2fff-39a8",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "8", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-3", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "HAZARDOUS, RAPID FIRE 1", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gun Stocks",
+        "id": "b349-9d3a-1a65-3e48",
+        "collective": false,
+        "comment": "A2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon", "id": "7229-8a58-7573-c905", "hidden": false, "primary": false, "targetId": "ccdd-3987-11ed-90cd"}],
+        "profiles": [
+          {
+            "name": "Gun Stocks",
+            "id": "270f-e247-55f9-c650",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "3", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Medi-pack",
+        "id": "b9c9-d718-30ba-a99a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Medi-pack",
+            "id": "b8e3-1e1f-b58b-1ca0",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "This unit has Feel No Pain 6+.", "typeId": "9b8f-694b-e5e-b573"}]
+          }
+        ]
+      },
+      {
+        "name": "Grenade Launcher",
+        "id": "4e85-9167-68ce-8738",
+        "comment": "BS3+",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Blast", "id": "32f9-2336-9876-1aac", "hidden": false, "targetId": "6c1f-1cf7-ff25-c99e", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "➤ Grenade Launcher - Frag",
+            "id": "d5c5-86fd-4a38-d955",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "D3", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "BLAST 1", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          },
+          {
+            "name": "➤ Grenade Launcher - Krak",
+            "id": "fd81-e5f-683f-ef6c",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "9", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "-2", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "D3", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flamer",
+        "id": "ddae-e6-79d8-3f66",
+        "collective": true,
+        "comment": "Collective",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Attacks Dx Weapon", "id": "30ce-ed51-3b62-e741", "hidden": false, "primary": false, "targetId": "e993-e086-6de1-12af"}],
+        "infoLinks": [
+          {"name": "Ignores Cover", "id": "209f-22c5-dbcd-cdce", "hidden": false, "targetId": "4640-43e7-30b-215a", "type": "rule"},
+          {"name": "Torrent", "id": "399b-669e-9c55-31ca", "hidden": false, "targetId": "5edf-d619-23e0-9b56", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Flamer",
+            "id": "585c-dbb1-43b6-2ef1",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "D6", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "-", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "IGNORES COVER, TORRENT", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chainsword",
+        "id": "3d79-ea50-dfa0-af68",
+        "comment": "A4 WS4+",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon", "id": "c742-cea6-7af5-a577", "hidden": false, "primary": false, "targetId": "ccdd-3987-11ed-90cd"}],
+        "profiles": [
+          {
+            "name": "Chainsword",
+            "id": "60c3-6006-2e62-d5c1",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "3", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Weapon",
+        "id": "600b-6aef-1737-a654",
+        "comment": "A3 WS4+",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon", "id": "d30d-d723-0137-b016", "hidden": false, "primary": false, "targetId": "ccdd-3987-11ed-90cd"}],
+        "profiles": [
+          {
+            "name": "Power Weapon",
+            "id": "8eb-622d-4eeb-1697",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "3", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "4", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Fist",
+        "id": "f054-ef04-f991-1ccb",
+        "comment": "WS4+",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Melee Weapon", "id": "438b-725c-8389-e35f", "hidden": false, "primary": false, "targetId": "ccdd-3987-11ed-90cd"}],
+        "profiles": [
+          {
+            "name": "Power Fist",
+            "id": "137a-506c-8e55-c3d0",
+            "hidden": false,
+            "typeId": "8a40-4aaa-c780-9046",
+            "typeName": "Melee Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+              {"name": "A", "$text": "3", "typeId": "2337-daa1-6682-b110"},
+              {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+              {"name": "S", "$text": "6", "typeId": "ab33-d393-96ce-ccba"},
+              {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
+              {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+              {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bolt Pistol",
+        "id": "edce-b2da-b8c3-7c8b",
+        "comment": "BS4+",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Ranged Weapon", "id": "4917-3a69-e82b-6caf", "hidden": false, "primary": false, "targetId": "eeda-8544-a2f3-3fab"},
+          {"name": "Pistol Weapon", "id": "a5d0-2df7-b760-ad5c", "hidden": false, "primary": false, "targetId": "1db0-c6b5-19db-8d0c"}
+        ],
+        "infoLinks": [{"name": "Close-quarters", "id": "f2d2-720b-4d15-f491", "hidden": false, "targetId": "5238-5ad4-52f7-6eb4", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Bolt Pistol",
+            "id": "3ef3-1763-2156-5a1a",
+            "hidden": false,
+            "typeId": "f77d-b953-8fa4-b762",
+            "typeName": "Ranged Weapons",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+              {"name": "S", "$text": "4", "typeId": "2229-f494-25db-c5d3"},
+              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+              {"name": "Keywords", "$text": "CLOSE-QUARTERS", "typeId": "7f1b-8591-2fcf-d01c"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Detachment",
+        "id": "2a89-bc10-88ee-0e4a",
+        "hidden": false,
+        "import": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Configuration", "id": "ffe0-f43a-feb1-4599", "hidden": false, "primary": true, "targetId": "4ac9-fd30-1e3d-b249"}],
+        "constraints": [
+          {
+            "id": "a7e9-b91b-caa3-05bd",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "2900-1210-5e2c-874b",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Drayden's Lance",
+            "id": "3e69-bc0b-2885-f4ba",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Priority Assets", "id": "c77e-f13d-caa9-15e9", "hidden": false, "primary": false, "targetId": "0936-9767-1cc7-52ae"}],
+            "constraints": [
+              {"id": "7d96-b274-5284-cff1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "9ffd-60c8-d596-cb2b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [
+              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0},
+              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 1}
+            ],
+            "rules": [
+              {
+                "name": "Experienced Veterans",
+                "id": "994f-2611-c09a-9a70",
+                "description": "Friendly **DRAYDEN'S LANCE** units can re-roll rolls to determine the:\n- **A** of a weapon.\n- **D** of an attack.",
+                "hidden": false
+              }
+            ]
           }
         ]
       },
       {
         "name": "Attilan Rough Riders",
-        "id": "1c41-ff61-cecb-fce2",
-        "hidden": false,
-        "import": true,
-        "targetId": "2299-bed9-3e-2b60",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Baneblade",
-        "id": "abb6-cf38-a3f1-7e95",
-        "hidden": false,
-        "import": true,
-        "targetId": "a6a1-1612-f982-31",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Banehammer",
-        "id": "4c9f-3441-edd3-c4e5",
-        "hidden": false,
-        "import": true,
-        "targetId": "d10-48db-3241-ec72",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Banesword",
-        "id": "4e46-82c5-d3b3-c27d",
-        "hidden": false,
-        "import": true,
-        "targetId": "30f5-d90a-9811-d763",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Basilisk",
-        "id": "aa89-8d18-ab88-85ef",
-        "hidden": false,
-        "import": true,
-        "targetId": "bf53-4ab3-ff75-9aa0",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Bullgryn Squad", "id": "3ec3-1ac7-2064-9783", "hidden": false, "import": true, "targetId": "37ad-63e5-1786-87cf", "type": "selectionEntry"},
-      {"name": "Cadian Castellan", "id": "c43b-26b5-4c4-521c", "hidden": false, "import": true, "targetId": "2b49-4d03-aaf5-3532", "type": "selectionEntry"},
-      {"name": "Cadian Command Squad", "id": "775d-c8f4-8d6a-e768", "hidden": false, "import": true, "targetId": "4d28-f2a7-67c1-eb2e", "type": "selectionEntry"},
-      {"name": "Cadian Shock Troops", "id": "7b5-9080-f871-aff9", "hidden": false, "import": true, "targetId": "a2aa-7688-dcb1-4132", "type": "selectionEntry"},
-      {
-        "name": "Chimera",
-        "id": "9357-7f3f-56be-3129",
-        "hidden": false,
-        "import": true,
-        "targetId": "cf23-58db-8ba4-9ec8",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Commissar", "id": "f86e-edef-7ce6-6ded", "hidden": false, "import": true, "targetId": "a979-5b21-dc69-b949", "type": "selectionEntry"},
-      {"name": "Death Korps of Krieg", "id": "4fb3-5033-9135-e605", "hidden": false, "import": true, "targetId": "ade0-fa44-d4cf-4fc8", "type": "selectionEntry"},
-      {
-        "name": "Deathstrike",
-        "id": "4425-da07-5180-9b30",
-        "hidden": false,
-        "import": true,
-        "targetId": "e19f-b9b8-75d5-8520",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Doomhammer",
-        "id": "a4df-efb2-5bfa-cff6",
-        "hidden": false,
-        "import": true,
-        "targetId": "8342-57dd-69d3-e698",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Field Ordnance Battery",
-        "id": "f790-9b08-1134-58b3",
-        "hidden": false,
-        "import": true,
-        "targetId": "64a9-4cb2-400e-efd1",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Gaunt’s Ghosts", "id": "ffd3-a6da-a79e-bb34", "hidden": false, "import": true, "targetId": "653d-80-d715-7d55", "type": "selectionEntry"},
-      {
-        "name": "Cadian Heavy Weapons Squad",
-        "id": "30f1-5a2a-9f88-d26c",
-        "hidden": false,
-        "import": true,
-        "targetId": "91a9-15e-b5f0-700f",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Hellhammer",
-        "id": "4b14-165e-b687-1078",
-        "hidden": false,
-        "import": true,
-        "targetId": "8277-6399-5d74-760d",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Hellhound",
-        "id": "2684-7f5b-aa65-923e",
-        "hidden": false,
-        "import": true,
-        "targetId": "c28b-c3af-38b2-8865",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Hydra",
-        "id": "287e-ac22-3dc3-fac0",
-        "hidden": false,
-        "import": true,
-        "targetId": "4967-19b6-1e2a-a300",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Kasrkin", "id": "3628-3edf-659e-6405", "hidden": false, "import": true, "targetId": "abe4-ca71-d5a7-3883", "type": "selectionEntry"},
-      {
-        "name": "Leman Russ Battle Tank",
-        "id": "4071-d276-4b66-b186",
-        "hidden": false,
-        "import": true,
-        "targetId": "c581-3ab5-49a0-9ec0",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Leman Russ Eradicator",
-        "id": "369c-b9c1-931-60ee",
-        "hidden": false,
-        "import": true,
-        "targetId": "286e-8e39-b807-5981",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Leman Russ Demolisher",
-        "id": "805a-7234-cf45-24fb",
-        "hidden": false,
-        "import": true,
-        "targetId": "cbcc-e0ad-4b9-2c76",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Leman Russ Exterminator",
-        "id": "3fa3-3764-1622-6b9d",
-        "hidden": false,
-        "import": true,
-        "targetId": "d8c8-ea02-21bf-de0b",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Leman Russ Vanquisher",
-        "id": "d9ac-54cb-cdb9-6d4c",
-        "hidden": false,
-        "import": true,
-        "targetId": "ddf2-228b-edd9-7e83",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Leman Russ Punisher",
-        "id": "f9d6-8548-3291-8c60",
-        "hidden": false,
-        "import": true,
-        "targetId": "e529-5853-d7e2-17ad",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Lord Solar Leontus",
-        "id": "d2de-6903-46a-f02c",
-        "hidden": false,
-        "import": true,
-        "targetId": "a9d-55c1-3d24-fa25",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Manticore",
-        "id": "df92-e0be-df8f-73fc",
-        "hidden": false,
-        "import": true,
-        "targetId": "41be-48c9-5476-f47a",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Militarum Tempestus Command Squad",
-        "id": "30ef-6edf-f9be-6b3b",
-        "hidden": false,
-        "import": true,
-        "targetId": "497-36ad-8ecb-f7c7",
-        "type": "selectionEntry"
-      },
-      {"name": "Nork Deddog", "id": "3ea1-4365-6d97-1b59", "hidden": false, "import": true, "targetId": "bcda-f4bb-e726-9bfe", "type": "selectionEntry"},
-      {"name": "Ogryn Bodyguard", "id": "2265-a0d2-432c-ca41", "hidden": false, "import": true, "targetId": "a7c2-1534-93b0-c0eb", "type": "selectionEntry"},
-      {"name": "Ogryn Squad", "id": "ae81-eb8-844-95e7", "hidden": false, "import": true, "targetId": "c9eb-2007-af01-a853", "type": "selectionEntry"},
-      {"name": "Primaris Psyker", "id": "f1f4-72d3-d4f4-97de", "hidden": false, "import": true, "targetId": "4ad0-e988-a513-9530", "type": "selectionEntry"},
-      {
-        "name": "Provisionally Prepared [Legends]",
-        "id": "55e9-8263-501f-4eda",
-        "hidden": false,
-        "import": true,
-        "targetId": "f4d1-cea9-f487-4501",
-        "type": "selectionEntry"
-      },
-      {
-        "name": "Regimental Attachés [Legends]",
-        "id": "9f03-ced1-9af-3f2d",
-        "hidden": false,
-        "import": true,
-        "targetId": "5da1-9869-294e-8187",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Tech-Priest Enginseer", "id": "77a1-a36b-5192-b450", "hidden": false, "import": true, "targetId": "f556-a33d-dc90-d6fc", "type": "selectionEntry"},
-      {
-        "name": "Rogal Dorn Battle Tank",
-        "id": "c7e0-68a4-64af-88e4",
-        "hidden": false,
-        "import": true,
-        "targetId": "2127-efcc-1f62-7fab",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Scout Sentinels",
-        "id": "1ee4-62ac-f8e3-cf62",
-        "hidden": false,
-        "import": true,
-        "targetId": "4424-a6ec-6d9e-a936",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Sergeant Harker [Legends]", "id": "a496-7c35-f648-d819", "hidden": false, "import": true, "targetId": "a8d5-81f9-96a0-fd12", "type": "selectionEntry"},
-      {
-        "name": "Shadowsword",
-        "id": "b5d3-ef49-da86-62ab",
-        "hidden": false,
-        "import": true,
-        "targetId": "1b48-2f2-8e9c-1308",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Sly Marbo", "id": "8d22-6401-74fb-c577", "hidden": false, "import": true, "targetId": "4d50-e535-616a-259c", "type": "selectionEntry"},
-      {
-        "name": "Stormlord",
-        "id": "8621-8c62-2041-9bb5",
-        "hidden": false,
-        "import": true,
-        "targetId": "892b-678c-72e6-ee58",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Leman Russ Commander",
-        "id": "3b7d-b60f-4c12-3ab0",
-        "hidden": false,
-        "import": true,
-        "targetId": "5430-18e-d7b0-1d54",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Taurox",
-        "id": "fd9d-7a51-43be-16d1",
-        "hidden": false,
-        "import": true,
-        "targetId": "11e5-d4ab-d140-ac38",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Taurox Prime",
-        "id": "f6f4-dd0a-a388-a9fe",
-        "hidden": false,
-        "import": true,
-        "targetId": "4b67-f814-358e-f776",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Tempestus Scions", "id": "fe4d-4c95-5b84-2670", "hidden": false, "import": true, "targetId": "679b-f37f-2388-748", "type": "selectionEntry"},
-      {"name": "Ursula Creed", "id": "b455-c6f1-b37e-c3b7", "hidden": false, "import": true, "targetId": "b6b2-9971-ec0c-349e", "type": "selectionEntry"},
-      {
-        "name": "Valkyrie",
-        "id": "792-4a0b-303c-bf6c",
-        "hidden": false,
-        "import": true,
-        "targetId": "9665-3160-8a04-d2bc",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Wyvern",
-        "id": "f9a6-cebc-48db-8236",
-        "hidden": false,
-        "import": true,
-        "targetId": "d11b-c49d-41bf-1f36",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Detachment", "id": "cd5f-2fc8-7d6f-9dee", "hidden": false, "import": true, "targetId": "406d-8707-c597-abd6", "type": "selectionEntry"},
-      {"name": "Catachan Jungle Fighters", "id": "34a6-be21-d115-fe06", "hidden": false, "import": true, "targetId": "fe5a-764e-37ed-7cef", "type": "selectionEntry"},
-      {
-        "name": "Munitorum Servitors [Legends]",
-        "id": "312a-7de8-16f7-1b1",
-        "hidden": false,
-        "import": true,
-        "targetId": "5c5f-8f23-7f13-2af6",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Stormsword",
-        "id": "d3fe-e9f2-d76b-a67",
-        "hidden": false,
-        "import": true,
-        "targetId": "67bc-a760-7ed5-9952",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Death Riders",
-        "id": "d30b-7a78-62e8-3ba5",
-        "hidden": false,
-        "import": true,
-        "targetId": "f1a-7c78-ffdc-bf5b",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Hell's Last [Legends]",
-        "id": "ff83-3a46-581b-5372",
-        "hidden": false,
-        "import": true,
-        "targetId": "2408-cf76-fe11-c6da",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Carnodon [Legends]",
-        "id": "a573-d275-227d-d26e",
-        "hidden": false,
-        "import": true,
-        "targetId": "173e-ddd1-354c-583b",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Cyclops Demolition Vehicle",
-        "id": "9ad5-50be-135c-abbf",
-        "hidden": false,
-        "import": true,
-        "targetId": "95b4-68d6-26cf-188e",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Malcador [Legends]",
-        "id": "8041-c072-2179-b50",
-        "hidden": false,
-        "import": true,
-        "targetId": "f706-c35a-a325-38bf",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Malcador Annihilator [Legends]",
-        "id": "ba5e-da5f-c28a-e649",
-        "hidden": false,
-        "import": true,
-        "targetId": "bc69-45ff-789c-90bb",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Malcador Defender [Legends]",
-        "id": "7ac3-d9ed-f091-4a28",
-        "hidden": false,
-        "import": true,
-        "targetId": "a185-ae7a-4503-8ceb",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Malcador Infernus [Legends]",
-        "id": "9445-8040-98c9-6400",
-        "hidden": false,
-        "import": true,
-        "targetId": "5e59-657b-5c85-1d92",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Stormblade [Legends]",
-        "id": "8f3d-8b4b-eac0-f1e1",
-        "hidden": false,
-        "import": true,
-        "targetId": "a93c-9d4b-8fd9-15b4",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Macharius [Legends]",
-        "id": "d15e-ed71-a47f-87c",
-        "hidden": false,
-        "import": true,
-        "targetId": "d7a-7abb-831b-1c67",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Macharius Vanquisher [Legends]",
-        "id": "366-4207-f5fe-a98d",
-        "hidden": false,
-        "import": true,
-        "targetId": "731f-e022-6394-3690",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Macharius Vulcan [Legends]",
-        "id": "5460-7bbe-b13a-a403",
-        "hidden": false,
-        "import": true,
-        "targetId": "e951-f9f2-3dd4-d5b8",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Praetor [Legends]",
-        "id": "eb5c-2b78-d795-d078",
-        "hidden": false,
-        "import": true,
-        "targetId": "247-2938-79b6-ff4b",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Crassus [Legends]",
-        "id": "58b4-e505-ee90-87f0",
-        "hidden": false,
-        "import": true,
-        "targetId": "c7cc-ad05-15f6-a4f3",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Colossus [Legends]",
-        "id": "cfdd-bee8-69e6-33f9",
-        "hidden": false,
-        "import": true,
-        "targetId": "1653-dc47-25b-c71f",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Valdor [Legends]",
-        "id": "b03b-7117-bbc3-dcbc",
-        "hidden": false,
-        "import": true,
-        "targetId": "3936-a532-dc5e-8498",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Avenger Strike Fighter",
-        "id": "2da7-241c-8df1-8a08",
-        "hidden": false,
-        "import": true,
-        "targetId": "532c-2c97-357a-fa1e",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Voss-pattern Lightning [Legends]",
-        "id": "9866-16e8-9085-4b18",
-        "hidden": false,
-        "import": true,
-        "targetId": "ed3d-fa87-4f0d-d10c",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Vulture Gunship [Legends]",
-        "id": "7a3e-319d-faa3-e341",
-        "hidden": false,
-        "import": true,
-        "targetId": "739e-cb18-c050-fca1",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Marauder Bomber [Legends]",
-        "id": "505f-957b-6b38-abb3",
-        "hidden": false,
-        "import": true,
-        "targetId": "7f1f-38c8-1bdc-55d7",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Marauder Destroyer [Legends]",
-        "id": "5699-9996-d84e-77ab",
-        "hidden": false,
-        "import": true,
-        "targetId": "18f9-56ec-7334-69a7",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Tarantula Battery [Legends]",
-        "id": "73f3-843d-674f-7f77",
-        "hidden": false,
-        "import": true,
-        "targetId": "1502-bae3-93b4-c89a",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Rapier Laser Destroyer Battery [Legends]",
-        "id": "e659-f4ce-f63-e8ca",
-        "hidden": false,
-        "import": true,
-        "targetId": "31ec-a804-92ad-97",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Hades Breaching Drill [Legends]",
-        "id": "d8bb-bc8d-b3c8-a33b",
-        "hidden": false,
-        "import": true,
-        "targetId": "ed8d-9053-9d33-61da",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Trojan Support Vehicle [Legends]",
-        "id": "aea6-e9e8-178f-7ec3",
-        "hidden": false,
-        "import": true,
-        "targetId": "fbaf-15f6-37d8-c5b",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Leman Russ Executioner",
-        "id": "77bd-ada2-f0c9-5aaf",
-        "hidden": false,
-        "import": true,
-        "targetId": "c8fc-b9fa-d126-a296",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Medusa Carriage Battery [Legends]",
-        "id": "5fe4-d1c1-1d88-9328",
-        "hidden": false,
-        "import": true,
-        "targetId": "60c8-fd76-c98b-304a",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Earthshaker Carriage Battery [Legends]",
-        "id": "ce09-1a61-819d-2cf6",
-        "hidden": false,
-        "import": true,
-        "targetId": "efc7-ac4c-1fcd-5b39",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Valkyrie Sky Talon [Legends]",
-        "id": "8634-48cc-9feb-c7af",
-        "hidden": false,
-        "import": true,
-        "targetId": "f8cc-73b7-6caa-f741",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Aquila Lander [Legends]",
-        "id": "4da1-42fd-ba30-5808",
-        "hidden": false,
-        "import": true,
-        "targetId": "b44d-ecac-2542-e584",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Show/Hide Options",
-        "id": "6f5b-b62-37d0-4f6c",
-        "hidden": false,
-        "import": true,
-        "targetId": "e8ef-836a-a9d1-901d",
-        "type": "selectionEntry",
-        "entryLinks": [
-          {"name": "Show Imperial Knights", "id": "f8d5-8d30-ef1d-9fc3", "hidden": false, "import": true, "targetId": "e82c-6f8c-2b97-a287", "type": "selectionEntry"},
-          {"name": "Show Imperial Agents", "id": "7593-597b-26b7-2717", "hidden": false, "import": true, "targetId": "e08b-2448-5606-fefb", "type": "selectionEntry"},
-          {"name": "Show Titans", "id": "1494-4bb1-b7e6-d879", "hidden": false, "import": true, "targetId": "f26b-79db-80e0-3a3b", "type": "selectionEntry"}
-        ]
-      },
-      {
-        "name": "Dominus Armoured Siege Bombard [Legends]",
-        "id": "8b44-2197-db9f-2af4",
-        "hidden": false,
-        "import": true,
-        "targetId": "fc41-a899-8d5a-dc01",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Heavy Mortar Team [Legends]",
-        "id": "9239-111e-4ef4-b40f",
-        "hidden": false,
-        "import": true,
-        "targetId": "e184-bfe9-ea12-a5e3",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Heavy Quad Launcher Team [Legends]",
-        "id": "19cc-ae92-3df3-2530",
-        "hidden": false,
-        "import": true,
-        "targetId": "5762-f71e-7693-49a6",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Death Rider Commissar [Legends]",
-        "id": "886b-df8b-1e8b-e17b",
-        "hidden": false,
-        "import": true,
-        "targetId": "d58c-e97f-5062-d9e1",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Arkurian Stormhammer [Legends]",
-        "id": "8fb2-80a9-b1ae-29db",
-        "hidden": false,
-        "import": true,
-        "targetId": "59c4-e4de-fe70-b221",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Gorgon Heavy Transport [Legends]",
-        "id": "2f30-49cf-84dc-4b84",
-        "hidden": false,
-        "import": true,
-        "targetId": "5d8e-2b2a-6ed1-8309",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Death Korps Grenadier Squad [Legends]",
-        "id": "f798-9d17-25ab-65af",
-        "hidden": false,
-        "import": true,
-        "targetId": "8a25-2a0c-87d2-3ea6",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Atlas Recovery Vehicle [Legends]",
-        "id": "7f70-8a46-23f7-226",
-        "hidden": false,
-        "import": true,
-        "targetId": "9673-7eaa-8ed9-bc7c",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Elysian Drop Sentinel [Legends]",
-        "id": "d3b9-1474-30d5-dfc1",
-        "hidden": false,
-        "import": true,
-        "targetId": "badd-6133-a469-613c",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Earthshaker Platform [Legends]",
-        "id": "2152-f3be-348-180e",
-        "hidden": false,
-        "import": true,
-        "targetId": "cb82-5250-6959-d2c3",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Mukaali Riders [Legends]",
-        "id": "6ea3-4899-60a0-3f65",
-        "hidden": false,
-        "import": true,
-        "targetId": "421a-6683-9e78-fb7",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Salamander Scout Vehicle [Legends]",
-        "id": "2974-41f7-e1cf-2483",
-        "hidden": false,
-        "import": true,
-        "targetId": "73b2-edbf-eec3-563d",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Tauros Assault Vehicle [Legends]",
-        "id": "82b2-5ba2-1f8e-2ed3",
-        "hidden": false,
-        "import": true,
-        "targetId": "6800-f1ce-7deb-d9eb",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Tauros Venator [Legends]",
-        "id": "6fc2-9ba5-cf7a-6afc",
-        "hidden": false,
-        "import": true,
-        "targetId": "a95f-9dd6-de66-fa59",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Salamander Command Vehicle [Legends]",
-        "id": "dc2d-a349-be04-8647",
-        "hidden": false,
-        "import": true,
-        "targetId": "9fb1-876b-ac2d-6c9b",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Storm Chimera [Legends]",
-        "id": "4df1-2aa5-8f96-50d3",
-        "hidden": false,
-        "import": true,
-        "targetId": "b6a7-4d64-1155-70c1",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Centaur Light Carrier [Legends]",
-        "id": "52e0-b396-70fa-e952",
-        "hidden": false,
-        "import": true,
-        "targetId": "81d4-2ed9-b0a4-6bdd",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Stygies Destroyer Tank Hunter [Legends]",
-        "id": "de34-bdb3-28fa-532a",
-        "hidden": false,
-        "import": true,
-        "targetId": "28d1-70b2-70be-c998",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Macharius Omega [Legends]",
-        "id": "dd89-8c13-78ce-c058",
-        "hidden": false,
-        "import": true,
-        "targetId": "4b76-f049-77b1-38bf",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Rein and Raus [Legends]",
-        "id": "f23c-da85-28c7-1776",
-        "hidden": false,
-        "import": true,
-        "targetId": "7d5b-1aae-55-2f5b",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Quartermaster Cadre Squad [Legends]",
-        "id": "d1dd-44e7-b654-7bc3",
-        "hidden": false,
-        "import": true,
-        "targetId": "1d02-5302-f162-65d6",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Sabre Weapons Battery [Legends]",
-        "id": "c46d-1057-94aa-9df8",
-        "hidden": false,
-        "import": true,
-        "targetId": "3597-3243-6870-70a1",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Elysian Sniper Squad [Legends]",
-        "id": "7300-2798-b3a1-cc45",
-        "hidden": false,
-        "import": true,
-        "targetId": "d4da-78a0-ef0-1e7e",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Armageddon-pattern Medusa [Legends]",
-        "id": "f78-481-9450-b631",
-        "hidden": false,
-        "import": true,
-        "targetId": "a96a-83e1-9200-c88b",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Arvus Lighter [Legends]",
-        "id": "e27e-ffc-cb61-740",
-        "hidden": false,
-        "import": true,
-        "targetId": "8b13-7c06-de12-4227",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Griffon Mortar Carrier [Legends]",
-        "id": "3eb-afd2-e2a5-fa07",
-        "hidden": false,
-        "import": true,
-        "targetId": "7be8-bfe0-6416-8ed7",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Minotaur [Legends]",
-        "id": "10d-3ef0-803-a47a",
-        "hidden": false,
-        "import": true,
-        "targetId": "92a9-a820-b7f-7dc2",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Manticore Platform [Legends]",
-        "id": "348-4a28-2b9-aca",
-        "hidden": false,
-        "import": true,
-        "targetId": "adbb-4624-738f-61ec",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Hydra Platform [Legends]",
-        "id": "7832-9d18-8dd-757b",
-        "hidden": false,
-        "import": true,
-        "targetId": "f46c-76ef-3d9c-98ea",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Sentinel Powerlifter [Legends]",
-        "id": "5039-6bdc-7bf3-b658",
-        "hidden": false,
-        "import": true,
-        "targetId": "8cc1-8512-710f-f15f",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {
-        "name": "Vendetta Gunship [Legends]",
-        "id": "ef71-b4d8-a9e-6e18",
-        "hidden": false,
-        "import": true,
-        "targetId": "4946-40d2-ee8b-a71c",
-        "type": "selectionEntry",
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [{"childId": "1d6e-2579-8e7f-1ed4", "field": "selections", "includeChildForces": true, "scope": "roster", "shared": true, "type": "atLeast", "value": 1}]
-          }
-        ]
-      },
-      {"name": "Tempestus Aquilons", "id": "8c31-ea58-28e3-d4dd", "hidden": false, "import": true, "targetId": "aa9f-f137-1638-0369", "type": "selectionEntry"},
-      {"name": "Ratlings", "id": "75d6-a5e8-b8f8-9091", "hidden": false, "import": true, "targetId": "8293-a070-2c87-de30", "type": "selectionEntry"},
-      {"name": "Lord Marshal Dreir", "id": "ee25-9289-f244-059b", "hidden": false, "import": true, "targetId": "9033-d07c-3e1c-f6f0", "type": "selectionEntry"},
-      {"name": "Krieg Command Squad", "id": "7109-8a5b-463b-43af", "hidden": false, "import": true, "targetId": "fbcd-274b-0196-b4f6", "type": "selectionEntry"},
-      {"name": "Catachan Command Squad", "id": "35fd-6169-2183-5edf", "hidden": false, "import": true, "targetId": "7d22-9fb6-a7e0-c21b", "type": "selectionEntry"},
-      {"name": "Artillery Team", "id": "c446-72c9-4147-8fcb", "hidden": false, "import": true, "targetId": "0595-6d6c-a783-12ab", "type": "selectionEntry"},
-      {"name": "Rogal Dorn Commander", "id": "c447-a6f6-2245-f7da", "hidden": false, "import": true, "targetId": "78b6-f280-bba9-0594", "type": "selectionEntry"},
-      {"name": "Ministorum Priest", "id": "1a39-2529-3722-60d3", "hidden": false, "import": true, "targetId": "ba72-7b05-33c9-a1c0", "type": "selectionEntry"},
-      {"name": "Krieg Combat Engineers", "id": "6fd0-a0ae-a673-1b14", "hidden": false, "import": true, "targetId": "3e90-9359-2aaa-205e", "type": "selectionEntry"},
-      {"name": "Krieg Heavy Weapons Squad", "id": "4bde-dc8a-4a53-6924", "hidden": false, "import": true, "targetId": "1669-d311-eff9-243b", "type": "selectionEntry"},
-      {
-        "name": "Catachan Heavy Weapons Squad",
-        "id": "5727-4dd2-5ff4-abd0",
-        "hidden": false,
-        "import": true,
-        "targetId": "dfcb-7854-1d6d-cd02",
-        "type": "selectionEntry"
-      },
-      {
-        "name": "Order of Battle",
-        "id": "d539-debc-87ba-ddb8",
-        "hidden": false,
-        "import": true,
-        "targetId": "eda7-8b4b-3719-af36",
-        "type": "selectionEntry",
-        "entryLinks": [
-          {
-            "name": "Tours of Duty",
-            "id": "bfbf-60b3-1e89-658c",
-            "collapsible": false,
+        "id": "0a0a-6e46-dfb0-ad4d",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Mounted", "id": "b082-a0d6-103f-8a82", "hidden": false, "primary": false, "targetId": "14a0-40c9-2748-ae6e"},
+          {"name": "Faction: Astra Militarum", "id": "da91-2095-36f4-5c17", "hidden": false, "primary": false, "targetId": "fa45-57e-930e-602b"},
+          {"name": "Imperium", "id": "4ee8-c0c8-9b39-c1db", "hidden": false, "primary": false, "targetId": "aff3-d6a3-2a95-9dc"},
+          {"name": "Regiment", "id": "1c7c-152b-521c-feac", "hidden": false, "primary": false, "targetId": "c8a1-fef-5569-61c9"},
+          {"name": "Attilan Rough Riders", "id": "8616-8d0c-f5cf-7b24", "hidden": false, "primary": false, "targetId": "1eba-3dba-477b-9283"},
+          {"name": "Unit", "id": "bacb-a887-4314-ec4c", "hidden": false, "primary": true, "targetId": "1160-70ae-a862-b1a8"},
+          {"name": "Drayden's Lance", "id": "e0b6-d92f-7822-ac5c", "hidden": false, "primary": false, "targetId": "2cc4-fa66-8808-fe35"},
+          {"name": "Explosives", "id": "4cf0-905c-6a05-149c", "hidden": false, "primary": false, "targetId": "e33d-891d-33aa-e9bf"}
+        ],
+        "constraints": [
+          {"id": "13b5-5d1e-74c6-8d92", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "f1a0-0e25-60fb-9fa4",
+            "childId": "1556-9b56-fba6-4370",
+            "childName": "Leader",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "2e2e-dcdc-7062-98dd",
+            "childId": "7dcd-7f61-69a7-0294",
+            "childName": "Support",
+            "field": "associations",
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {"id": "4d6e-0c09-431c-bba3", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1}
+        ],
+        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 60}],
+        "profiles": [
+          {
+            "name": "Horsemasters",
+            "id": "8337-e40c-ffd8-01a4",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When this unit makes a **fall-back move**, that move does not prevent this unit from being **eligible to shoot/declare a charge**.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "4 Rough Riders",
+            "id": "7bc1-84e1-0abd-5e84",
+            "defaultSelectionEntryId": "7fa6-4332-7294-9252",
+            "hidden": false,
+            "sortIndex": 3,
+            "constraints": [
+              {"id": "1801-dcb7-3b65-2edd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 4},
+              {"id": "1dbc-e440-671e-3d4c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Rough Rider with Hunting Lance",
+                "id": "5135-fefb-cc82-18c1",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "68dc-7820-0567-8dca", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "min", "value": 3},
+                  {"id": "e379-d46e-8d39-8ca1", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 3}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Laspistol",
+                    "id": "6b4a-f3b6-7c74-8ddc",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2689-4c0e-cdfb-3e5",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "f599-276f-d23a-f6d4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4ff8-b82e-1a73-0a18", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Lasgun",
+                    "id": "ff54-ed04-d24f-542c",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "26c-19b3-720-8dcf",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "bd18-f711-999e-88a9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "82d6-7627-8caf-f4cb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Hunting Lance",
+                    "id": "e651-1c07-eaa3-7fd8",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "70c3-75a8-983c-ea3d",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "bc00-54d1-3a33-7dac", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "535a-970e-6104-6498", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Steed's Hooves",
+                    "id": "8433-9e6a-a8c0-4874",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6316-de95-9075-9a8f",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "d906-5475-c906-82b1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4ca8-438c-66a0-676d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Attilan Rough Rider", "id": "c501-73f8-b112-e278", "hidden": false, "targetId": "c9bb-ee31-dd59-b490", "type": "profile"}]
+              },
+              {
+                "name": "Rough Rider with Goad Lance",
+                "id": "971b-0210-16f8-d157",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "ac56-dd8c-798c-4475", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "37b9-015b-cf8c-9009", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Laspistol",
+                    "id": "f50a-294e-186d-b300",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2689-4c0e-cdfb-3e5",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "c3d0-cb14-a3d4-80b0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "65be-b61d-d471-8023", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Lasgun",
+                    "id": "662a-d012-6aee-22f8",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "26c-19b3-720-8dcf",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "adf6-4ec2-fb9f-1972", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "e81d-ff22-9cce-fdd6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Goad Lance",
+                    "id": "5177-6dbc-a7dd-96e5",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "9254-fb44-df-bd0d",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "afdb-8b87-b961-c3b0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "1aca-b4f5-1cda-f6b1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "b9ee-0ce4-db1a-600d", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "max", "value": 2}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "b9ee-0ce4-db1a-600d",
+                        "type": "set",
+                        "value": 1,
+                        "conditions": [{"childId": "model", "field": "selections", "includeChildSelections": true, "scope": "unit", "shared": true, "type": "lessThan", "value": 10}]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Steed's Hooves",
+                    "id": "3836-190a-bd5d-c1ef",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6316-de95-9075-9a8f",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "6200-9c19-9eba-7b7f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "7ead-0f3e-9b04-7676", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Attilan Rough Rider", "id": "8d3f-58f5-dfbe-8705", "hidden": false, "targetId": "c9bb-ee31-dd59-b490", "type": "profile"}]
+              }
+            ]
+          },
+          {
+            "name": "Rough Rider Sergeant",
+            "id": "04d8-bb90-55e7-8071",
+            "hidden": false,
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "name": "Rough Rider Sergeant",
+                "id": "7b09-5a5c-9d92-904b",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {"id": "a933-30e5-2394-3d63", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "fe5a-0f58-389c-15d7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Lasgun",
+                    "id": "644e-38bf-96a6-6246",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "a09c-6de4-e1c1-708a",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "bd3d-b75f-0aed-95e8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "7341-ff72-6ab2-03ed", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Laspistol",
+                    "id": "02f5-cca4-911b-a51f",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "2689-4c0e-cdfb-3e5",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "5b91-f0f8-d9d1-cb45", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "3083-80c0-13b5-c1c2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Steed's Hooves",
+                    "id": "07d4-e1ed-1162-1a9e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "6316-de95-9075-9a8f",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "4bff-3a50-1327-6154", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "5b4e-6f06-4d08-11bc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  },
+                  {
+                    "name": "Hunting Lance",
+                    "id": "1344-37d8-b13b-2ae6",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "70c3-75a8-983c-ea3d",
+                    "type": "selectionEntry",
+                    "constraints": [
+                      {"id": "d19f-c683-7821-ff11", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "aac7-2a3f-9b00-c3d6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ]
+                  }
+                ],
+                "infoLinks": [{"name": "Attilan Rough Rider", "id": "40db-208b-e934-9cb7", "hidden": false, "targetId": "c9bb-ee31-dd59-b490", "type": "profile"}],
+                "selectionEntries": [
+                  {
+                    "name": "Power Sabre",
+                    "id": "bfd3-3e82-cdbe-a979",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "7217-75e9-3e41-d6af", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "ebc2-edb1-c13c-2101", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Power Sabre",
+                        "id": "fdb1-993f-deb0-d3c1",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "S", "$text": "4", "typeId": "ab33-d393-96ce-ccba"},
+                          {"name": "AP", "$text": "-2", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Master Vox",
+        "id": "ed6b-6c67-4bb5-1405",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Master Vox",
+            "id": "7561-2ed3-70f9-a027",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When this unit's **^^OFFICER^^** model issues an Order, it can be issued to any eligible unit within 24\".",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Regimental Standard",
+        "id": "79b3-5c04-bd86-7ab4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Regimental Standard",
+            "id": "d474-27b8-1ac9-765d",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [{"name": "Description", "$text": "This unit has +1 **OC**.", "typeId": "9b8f-694b-e5e-b573"}]
+          }
+        ]
+      },
+      {
+        "name": "Vox-Caster",
+        "id": "1922-17a9-c911-a6e2",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Vox-Caster",
+            "id": "66c0-f39a-c974-5364",
+            "hidden": false,
+            "typeId": "9cc3-6d83-4dd3-9b64",
+            "typeName": "Abilities",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "When you target this unit with a **stratagem**, roll one D6, with +1 to the result if a friendly **^^OFFICER^^** is within 6\" of this unit:\n- On a 5+, you gain 1 CP.",
+                "typeId": "9b8f-694b-e5e-b573"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Enhancements",
+        "id": "65a0-4200-b349-dcb4",
+        "collapsible": true,
+        "hidden": false,
+        "constraints": [
+          {"id": "cf32-0da3-802d-2e14", "field": "selections", "includeChildSelections": true, "scope": "self", "shared": true, "type": "max", "value": 1},
+          {
+            "id": "f599-a5a9-e7aa-e007",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "d716-68e6-2bac-d2d8",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Call Up the Reserves",
+            "id": "2e55-7635-ea6c-b953",
             "hidden": false,
             "import": true,
-            "targetId": "b30e-426f-b315-62aa",
-            "type": "selectionEntryGroup"
+            "type": "upgrade",
+            "costs": [
+              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 20},
+              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+              {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "e4d8-c6a1-7c23-ae25", "childName": "Officer", "field": "selections", "scope": "parent", "shared": true, "type": "notInstanceOf", "value": 1}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Call Up the Reserves",
+                "id": "2424-b2f1-0798-3766",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "**DRAYDEN'S LANCE OFFICER** model only. (Once per battle, per unit) At the start of any phase, you can use this ability. If you do, select one friendly **DRAYDEN'S LANCE** unit. That unit **heals** D3+2 wounds.",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              }
+            ]
           },
-          {"name": "Shadow Operations", "id": "406a-d472-ffad-66e1", "hidden": false, "import": true, "targetId": "68a2-ada5-3cd4-c5a3", "type": "selectionEntryGroup"},
-          {"name": "Chivalric Quests", "id": "f6d2-44a6-7edf-6494", "hidden": false, "import": true, "targetId": "12f3-7f5b-747e-41ca", "type": "selectionEntryGroup"}
+          {
+            "name": "Drayden's Drill",
+            "id": "fe6a-c91b-ba61-e50b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "costs": [
+              {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 20},
+              {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+              {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+              {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+              {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+              {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+              {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+              {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [{"childId": "54e3-5045-251e-8453", "childName": "Kasrkin", "field": "selections", "scope": "parent", "shared": true, "type": "notInstanceOf", "value": 1}]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Drayden's Drill",
+                "id": "d225-839c-1e08-27f5",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "Upgrade: **DRAYDEN'S LANCE KASRKIN** unit only. This unit's **snap shooting** attacks hit on unmodified **hit rolls** of 4+.",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              }
+            ]
+          }
         ]
-      },
-      {
-        "name": "Front-line Commander [Crucible]",
-        "id": "c90d-57dd-0316-ce67",
-        "hidden": false,
-        "import": true,
-        "targetId": "4fc5-184d-b305-3551",
-        "type": "selectionEntry"
-      },
-      {
-        "name": "Sentinel Commander [Crucible]",
-        "id": "36ac-880c-7435-e5ed",
-        "hidden": false,
-        "import": true,
-        "targetId": "a040-9715-5d3a-52af",
-        "type": "selectionEntry"
-      },
-      {
-        "name": "Augmented Bone 'Ead [Crucible]",
-        "id": "f090-7a8a-8552-3b4d",
-        "hidden": false,
-        "import": true,
-        "targetId": "7280-8daf-312a-b01d",
-        "type": "selectionEntry"
-      },
-      {"name": "Commissar Graves", "id": "29df-3b97-03bf-0275", "hidden": false, "import": true, "targetId": "50b8-1f13-9807-0069", "type": "selectionEntry"},
-      {"name": "Commissar Graves on Foot", "id": "b6f0-9fc2-ce6c-debb", "hidden": false, "import": true, "targetId": "d624-2be1-87a3-41ca", "type": "selectionEntry"},
-      {"name": "Commissar Yarrick", "id": "1f33-61d2-bb9b-86a7", "hidden": false, "import": true, "targetId": "3962-1fa9-7088-aedd", "type": "selectionEntry"},
-      {"name": "Hippogriff AFV", "id": "7a39-89ff-6e36-f03c", "hidden": false, "import": true, "targetId": "b566-8903-3a36-62f1", "type": "selectionEntry"},
-      {"name": "Centaur RSV", "id": "3a44-9eb0-d51d-6b46", "hidden": false, "import": true, "targetId": "c871-4769-71ed-c4b3", "type": "selectionEntry"},
-      {"name": "Cadian Recon Squad", "id": "39a7-1ea5-9552-d4ba", "hidden": false, "import": true, "targetId": "05de-5701-33a0-b23d", "type": "selectionEntry"},
-      {"name": "Ciaphas Cain [Legends]", "id": "ad2e-a4f4-6664-945e", "hidden": false, "import": true, "targetId": "4aa7-5845-84ad-2d7d", "type": "selectionEntry"}
+      }
     ]
   }
 }
